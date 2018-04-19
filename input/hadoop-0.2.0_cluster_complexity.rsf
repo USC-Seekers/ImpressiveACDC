@@ -1,0 +1,12 @@
+org.apache.hadoop.ipc.ss	17
+org.apache.hadoop.record.compiler.ss	4
+org.apache.hadoop.metrics.spi.ss	15
+org.apache.hadoop.record.compiler.generated.ss	20
+org.apache.hadoop.fs.ss	23
+org.apache.hadoop.io.ss	49
+org.apache.hadoop.record.ss	23
+org.apache.hadoop.util.ss	6
+org.apache.hadoop.dfs.ss	47
+org.apache.hadoop.metrics.ganglia.ss	2
+org.apache.hadoop.conf.ss	6
+org.apache.hadoop.mapred.ss	118
