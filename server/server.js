@@ -7,9 +7,6 @@ var app = express();
 
 app.use(bodyParser.json());
 
-app.get('/', function (req, res) {
-    res.send(global);
-});
 
 app.post('/github/push', function (req, res) {
     deploy(req.body);
