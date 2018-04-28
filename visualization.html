@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <style type="text/css">
+    .nodes {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+.links {
+    stroke: #999;
+    stroke-opacity: .6;
+}
+
+  </style>
+
+</head>
+<body>
+  <div class="ui-widget">
+   <input id="search">
+    <button type="button" onclick="searchNode()">Search</button>
+</div>
+<svg id="overAll" width="1200" height="800"></svg>
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type='text/javascript' src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"> </script>
+<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
+
+<script>
+var nodes;
+var links;
+var optArray = [];
+var svg;
+var nodeElements;
+var linkElements;
+var textElements;
+
+ function searchNode() {
+
+    //find the node
+
+    var selectedVal = document.getElementById('search').value;
+    // var nodeElements = svg.selectAll(".circle");
+
+    if (selectedVal == "none") {
+        nodeElements.style("stroke", "white").style("stroke-width", "1");
+    } else {
+        var selected = nodeElements.filter(function (d, i) {
+            return d.label != selectedVal;
+        });
+        var selectedText = textElements.filter(function (d, i) {
+            return d.label != selectedVal;
+          });
+
+        selected.style("opacity", "0");
+        // var link = svg.selectAll(".link")
+        linkElements.style("opacity", "0");
+        selectedText.style("opacity","0");
+        d3.selectAll("line, text, circle").transition()
+            .duration(5000)
+            .style("opacity", 1);
+
+
+    }
+  }
+
+
+d3.json("Mygraph.json", function(error, graph) {
+ 
+  links=graph.links;
+  nodes=graph.nodes;
+
+function getNeighbors(node) {
+  return links.reduce(function (neighbors, link) {
+      if (link.target.id === node.id) {
+        neighbors.push(link.source.id)
+      } else if (link.source.id === node.id) {
+        neighbors.push(link.target.id)
+      }
+      return neighbors
+    },
+    [node.id]
+  )
+}
+
+function isNeighborLink(node, link) {
+  return link.target.id === node.id || link.source.id === node.id
+}
+
+
+function getNodeColor(node, neighbors) {
+  if (Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1) {
+    return '#FD7F28';
+  }
+
+  if (node.level===1) return '#AFC8E7';
+  else if (node.level===2) return '#9ADE8D';
+    else if (node.level===3) return '#9369BB';
+    else if (node.level===4) return '#FD9898';
+  // return node.level === 1 ? 'red' : 'gray'
+}
+
+function getNodeSize(node){
+  return node.level === 1 ? '15' : '10'
+}
+
+function getNodeSizeArrow(node){
+  // return node.level === 1 ? '15' : '7'
+console.log(node.id);
+  if (node.level===1) {
+    console.log("get larget one");
+    return 15;}
+    else {
+      return 7;
+    }
+}
+function getTextSize(node)
+{
+    return node.level === 1 ? '10' : '7'
+}
+
+
+function getLinkColor(node, link) {
+  return isNeighborLink(node, link) ? 'green' : '#E5E5E5'
+}
+
+function getTextColor(node, neighbors) {
+  return Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1 ? 'green' : 'black'
+}
+
+var width = window.innerWidth
+var height = window.innerHeight
+
+ svg = d3.select('#overAll')
+svg.attr('width', width).attr('height', height)
+
+// simulation setup with all forces
+var linkForce = d3
+  .forceLink()
+  .id(function (link) { return link.id })
+  .strength(function (link) { return link.strength })
+
+
+var simulation = d3
+  .forceSimulation()
+  .force('link', linkForce)
+  .force('charge', d3.forceManyBody().strength(-120))
+  .force('center', d3.forceCenter(width / 2, height / 2))
+
+var dragDrop = d3.drag().on('start', function (node) {
+  node.fx = node.x
+  node.fy = node.y
+}).on('drag', function (node) {
+  simulation.alphaTarget(0.7).restart()
+  node.fx = d3.event.x
+  node.fy = d3.event.y
+}).on('end', function (node) {
+  if (!d3.event.active) {
+    simulation.alphaTarget(0)
+  }
+  node.fx = null
+  node.fy = null
+})
+
+function selectNode(selectedNode) {
+  var neighbors = getNeighbors(selectedNode);
+
+  // we modify the styles to highlight selected nodes
+  nodeElements.attr('fill', function (node) { return getNodeColor(node, neighbors) })
+  textElements.attr('fill', function (node) { return getTextColor(node, neighbors) })
+  linkElements.attr('stroke', function (link) { return getLinkColor(selectedNode, link) })
+}
+
+svg.append("defs").selectAll("marker")
+    .data(["suit", "licensing", "resolved"])
+  .enter().append("marker")
+    .attr("id", function(d) { return d; })
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 25)
+    .attr("refY", 0)
+    .attr("markerWidth", getNodeSizeArrow)
+    .attr("markerHeight", getNodeSizeArrow)
+    .attr("orient", "auto")
+  .append("path")
+    .attr("d", "M0,-5L10,0L0,5 L10,0 L0, -5")
+    .style("stroke", "#4679BD")
+    .style("opacity", "0.8");
+
+
+ linkElements = svg.append("g")
+  .attr("class", "links")
+  .selectAll("line")
+  .data(links)
+  .enter().append("line")
+    .attr("stroke-width", 1)
+	  .attr("stroke", "rgba(50, 50, 50, 0.2)")
+    .style("marker-end",  "url(#suit)") // Modified line 
+
+
+ nodeElements = svg.append("g")
+  .attr("class", "nodes")
+  .selectAll("circle")
+  .data(nodes)
+  .enter().append("circle")
+    .attr("r", getNodeSize)
+    .attr("fill", getNodeColor)
+    .call(dragDrop)
+    .on('dblclick', connectedNodes); //Added code 
+
+  //  .on('mouseover', selectNode);
+
+textElements = svg.append("g")
+  .attr("class", "texts")
+  .selectAll("text")
+  .data(nodes)
+  .enter().append("text")
+    .text(function (node) { return  node.label })
+	  .attr("font-size", getTextSize)
+	  .attr("dx", 15)
+    .attr("dy", 4)
+
+simulation.nodes(nodes).on('tick', () => {
+  nodeElements
+    .attr('cx', function (node) { return node.x })
+    .attr('cy', function (node) { return node.y })
+  textElements
+    .attr('x', function (node) { return node.x })
+    .attr('y', function (node) { return node.y })
+  linkElements
+    .attr('x1', function (link) { return link.source.x })
+    .attr('y1', function (link) { return link.source.y })
+    .attr('x2', function (link) { return link.target.x })
+    .attr('y2', function (link) { return link.target.y })
+})
+
+//for fish eyes
+// var fisheye = d3.fisheye.circular()
+//       .radius(120);
+// svg.on("mouseover", function() {
+//       simulation.stop();
+//       fisheye.focus(d3.mouse(this));
+//       d3.selectAll("circle").each(function(d) { d.fisheye = fisheye(d); })
+//           .attr("cx", function(d) { return d.fisheye.x; })
+//           .attr("cy", function(d) { return d.fisheye.y; });
+
+//       linkElements.attr("x1", function(d) { return d.source.fisheye.x; })
+//           .attr("y1", function(d) { return d.source.fisheye.y; })
+//           .attr("x2", function(d) { return d.target.fisheye.x; })
+//           .attr("y2", function(d) { return d.target.fisheye.y; });
+//       textElements.attr("x", function(d) { return d.fisheye.x; })
+//           .attr("y", function(d) { return d.fisheye.y; });
+         
+          
+//     });
+// svg.on("mouseleave", function() {
+//       simulation.start();
+          
+//     });
+
+//for hightlight 
+//Toggle stores whether the highlighting is on
+var toggle = 0;
+//Create an array logging what is connected to what
+
+var linkedByIndex = {};
+for (i = 0; i < nodes.length; i++) {
+    linkedByIndex[nodes[i].id + "," + nodes[i].id] = 1;
+
+};
+links.forEach(function (d) {
+  console.log(d);
+    linkedByIndex[d.source + "," + d.target] = 1;
+});
+
+        console.log(linkedByIndex);
+
+//This function looks up whether a pair are neighbours
+function neighboring(a, b) {
+    return linkedByIndex[a.id + "," + b.id];
+}
+function connectedNodes() {
+    if (toggle == 0) {
+        //Reduce the opacity of all but the neighbouring nodes
+        d = d3.select(this).node().__data__;
+        nodeElements.style("opacity", function (o) {
+            return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
+        });
+        linkElements.style("opacity", function (o) {
+            return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
+        });
+        textElements.style("opacity",function(o)
+        {
+            return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
+        });
+        //Reduce the op
+        toggle = 1;
+    } else {
+        //Put them back to opacity=1
+        nodeElements.style("opacity", 1);
+        linkElements.style("opacity", 1);
+        textElements.style("opacity", 1);
+        toggle = 0;
+    }
+}
+
+
+
+simulation.force("link").links(links)
+});
+</script>
+</body>
