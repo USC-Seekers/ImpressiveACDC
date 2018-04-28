@@ -3,62 +3,62 @@
     {
       "id": "org.apache.hadoop.conf.ss",
       "label": "org.apache.hadoop.conf.ss",
-      "level": 6
+      "level": 0.05084745762711865
     },
     {
       "id": "org.apache.hadoop.dfs.ss",
       "label": "org.apache.hadoop.dfs.ss",
-      "level": 47
+      "level": 0.3983050847457627
     },
     {
       "id": "org.apache.hadoop.fs.ss",
       "label": "org.apache.hadoop.fs.ss",
-      "level": 23
+      "level": 0.19491525423728814
     },
     {
       "id": "org.apache.hadoop.io.ss",
       "label": "org.apache.hadoop.io.ss",
-      "level": 49
+      "level": 0.4152542372881356
     },
     {
       "id": "org.apache.hadoop.ipc.ss",
       "label": "org.apache.hadoop.ipc.ss",
-      "level": 17
+      "level": 0.1440677966101695
     },
     {
       "id": "org.apache.hadoop.mapred.ss",
       "label": "org.apache.hadoop.mapred.ss",
-      "level": 118
+      "level": 1.0
     },
     {
       "id": "org.apache.hadoop.metrics.ganglia.ss",
       "label": "org.apache.hadoop.metrics.ganglia.ss",
-      "level": 2
+      "level": 0.01694915254237288
     },
     {
       "id": "org.apache.hadoop.metrics.spi.ss",
       "label": "org.apache.hadoop.metrics.spi.ss",
-      "level": 15
+      "level": 0.1271186440677966
     },
     {
       "id": "org.apache.hadoop.record.compiler.generated.ss",
       "label": "org.apache.hadoop.record.compiler.generated.ss",
-      "level": 20
+      "level": 0.1694915254237288
     },
     {
       "id": "org.apache.hadoop.record.compiler.ss",
       "label": "org.apache.hadoop.record.compiler.ss",
-      "level": 4
+      "level": 0.03389830508474576
     },
     {
       "id": "org.apache.hadoop.record.ss",
       "label": "org.apache.hadoop.record.ss",
-      "level": 23
+      "level": 0.19491525423728814
     },
     {
       "id": "org.apache.hadoop.util.ss",
       "label": "org.apache.hadoop.util.ss",
-      "level": 6
+      "level": 0.05084745762711865
     }
   ],
   "links": [

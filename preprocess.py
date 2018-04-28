@@ -12,6 +12,9 @@ def read_cluster(fileName):
             row = line.strip().split()
             membership[row[2]] = row[1]
             cntClass[row[1]] += 1
+        maximum = max(cntClass.values())
+        for cluster in cntClass:
+            cntClass[cluster] /= float(maximum)
     return membership, cntClass
 
 # Read dependency file
@@ -22,6 +25,7 @@ def read_deps(fileName):
             row = line.strip().split()
             deps.append((row[1], row[2]))
     return deps
+
 # Analyze cluster dependencies
 def anal_cluster_deps(membership, deps):
     adjList = defaultdict(Counter)
