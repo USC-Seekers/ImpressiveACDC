@@ -9,5 +9,5 @@ $ # For log4j-2.1
 $ python3 preprocess.py consistent-cluster/log4j-2.1_acdc_clustered.rsf consistent-cluster/log4j-2.1_deps.rsf
 ```
 
-## Replease
+## Release
 [Visualization Page](http://54.183.64.51/ImpressiveACDC/visualization.html)

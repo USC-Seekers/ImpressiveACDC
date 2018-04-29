@@ -104,7 +104,8 @@ function getNodeColor(node, neighbors) {
 }
 
 function getNodeSize(node){
-  return node.level*50;
+
+  return node.level * 50
 }
 
 function getNodeSizeArrow(node){
@@ -150,7 +151,8 @@ var collision = d3
 var simulation = d3
   .forceSimulation()
   .force('link', linkForce)
-  .force('charge', d3.forceManyBody().strength(-30))
+
+  .force('charge', d3.forceManyBody().strength(-200))
   .force('center', d3.forceCenter(width / 2, height / 2))
   .force('collision', collision);
 
@@ -195,8 +197,21 @@ svg.append("defs").selectAll("marker")
     .style("stroke", "#4679BD")
     .style("opacity", "0.8");
 
+// zoom
 
- linkElements = svg.append("g")
+var ga = svg.append("g")
+    .attr("class", "everything");
+    
+var zoom_handler = d3.zoom()
+    .on("zoom", zoom_actions);
+
+zoom_handler(svg);  
+
+function zoom_actions(){
+    ga.attr("transform", d3.event.transform);
+}
+
+ linkElements = ga.append("g")
   .attr("class", "links")
   .selectAll("line")
   .data(links)
@@ -206,7 +221,7 @@ svg.append("defs").selectAll("marker")
     .style("marker-end",  "url(#suit)") // Modified line 
 
 
- nodeElements = svg.append("g")
+ nodeElements = ga.append("g")
   .attr("class", "nodes")
   .selectAll("circle")
   .data(nodes)
@@ -218,7 +233,7 @@ svg.append("defs").selectAll("marker")
 
   //  .on('mouseover', selectNode);
 
-textElements = svg.append("g")
+textElements = ga.append("g")
   .attr("class", "texts")
   .selectAll("text")
   .data(nodes)
@@ -230,17 +245,17 @@ textElements = svg.append("g")
 
 simulation.nodes(nodes).on('tick', () => {
   nodeElements
-    .attr('cx', function (node) { return node.x })
-    .attr('cy', function (node) { return node.y })
 
+    .attr('cx', function (node) { return node.x; })
+    .attr('cy', function (node) { return node.y; })
   textElements
-    .attr('x', function (node) { return node.x })
-    .attr('y', function (node) { return node.y })
+    .attr('x', function (node) { return node.x; })
+    .attr('y', function (node) { return node.y; })
   linkElements
-    .attr('x1', function (link) { return link.source.x })
-    .attr('y1', function (link) { return link.source.y })
-    .attr('x2', function (link) { return link.target.x })
-    .attr('y2', function (link) { return link.target.y })
+    .attr('x1', function (link) { return link.source.x; })
+    .attr('y1', function (link) { return link.source.y; })
+    .attr('x2', function (link) { return link.target.x; })
+    .attr('y2', function (link) { return link.target.y; })
 })
 
 
@@ -311,7 +326,6 @@ function connectedNodes() {
         toggle = 0;
     }
 }
-
 
 
 simulation.force("link").links(links)
