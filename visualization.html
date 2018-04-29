@@ -114,13 +114,14 @@ function getNodeSize(node){
 }
 
 function getNodeSizeArrow(node){
-  // return node.level === 1 ? '15' : '7'
-  if (node.level===1) {
-    console.log("get larget one");
-    return 15;}
-    else {
-      return 7;
-    }
+  console.log(node.level);
+var value =  node.level * 100;
+if (value<=1) return 0;
+else if (value<2) return 8;
+else if (value<5) return 10;
+else return 15;
+
+
 }
 function getTextSize(node)
 {
@@ -191,10 +192,10 @@ svg.append("defs").selectAll("marker")
   .enter().append("marker")
     .attr("id", function(d) { return d; })
     .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 25)
+    .attr("refX", 11) 
     .attr("refY", 0)
-    .attr("markerWidth", getNodeSizeArrow)
-    .attr("markerHeight", getNodeSizeArrow)
+    .attr("markerWidth", 7)
+    .attr("markerHeight", 7)
     .attr("orient", "auto")
   .append("path")
     .attr("d", "M0,-5L10,0L0,5 L10,0 L0, -5")
@@ -222,8 +223,8 @@ function zoom_actions(){
   .enter().append("line")
     .attr("stroke-width", 1)
 	  .attr("stroke", "rgba(50, 50, 50, 0.2)")
-    .style("marker-end",  "url(#suit)") // Modified line 
-
+    .style("marker-end",  "url(#suit)"); // Modified line 
+ 
 
  nodeElements = ga.append("g")
   .attr("class", "nodes")
@@ -258,8 +259,63 @@ simulation.nodes(nodes).on('tick', () => {
   linkElements
     .attr('x1', function (link) { return link.source.x; })
     .attr('y1', function (link) { return link.source.y; })
-    .attr('x2', function (link) { return link.target.x; })
-    .attr('y2', function (link) { return link.target.y; })
+    .attr('x2', function (d) { 
+       var tightness = -3.0;
+        if(d.type == "straight")
+            tightness = 1000;
+
+        // Places the control point for the Bezier on the bisection of the
+        // segment between the source and target points, at a distance
+        // equal to half the distance between the points.
+        var dx = d.target.x - d.source.x;
+        var dy = d.target.y - d.source.y;
+        var dr = Math.sqrt(dx * dx + dy * dy);
+        var qx = d.source.x ;
+        var qy = d.source.y ;
+
+        // Calculates the segment from the control point Q to the target
+        // to use it as a direction to wich it will move "node_size" back
+        // from the end point, to finish the edge aprox at the edge of the
+        // node. Note there will be an angular error due to the segment not
+        // having the same direction as the curve at that point.
+        var dqx = d.target.x - qx;
+        var dqy = d.target.y - qy;
+        var qr = Math.sqrt(dqx * dqx + dqy * dqy);
+
+        var offset = 1.0 * getNodeSize(d.target);
+        var tx = d.target.x - dqx/qr* offset;
+        var ty = d.target.y - dqy/qr* offset;
+        return tx;
+    })
+    .attr('y2', function (d) { 
+       var tightness = -3.0;
+        if(d.type == "straight")
+            tightness = 1000;
+
+        // Places the control point for the Bezier on the bisection of the
+        // segment between the source and target points, at a distance
+        // equal to half the distance between the points.
+        var dx = d.target.x - d.source.x;
+        var dy = d.target.y - d.source.y;
+        var dr = Math.sqrt(dx * dx + dy * dy);
+        var qx = d.source.x;
+        var qy = d.source.y;
+
+        // Calculates the segment from the control point Q to the target
+        // to use it as a direction to wich it will move "node_size" back
+        // from the end point, to finish the edge aprox at the edge of the
+        // node. Note there will be an angular error due to the segment not
+        // having the same direction as the curve at that point.
+        var dqx = d.target.x - qx;
+        var dqy = d.target.y - qy;
+        var qr = Math.sqrt(dqx * dqx + dqy * dqy);
+
+        var offset = 1.0 * getNodeSize(d.target);
+        var tx = d.target.x - dqx/qr* offset;
+        var ty = d.target.y - dqy/qr* offset;
+        return ty;
+     })
+    
 })
 
 
