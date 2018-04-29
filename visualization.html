@@ -104,12 +104,11 @@ function getNodeColor(node, neighbors) {
 }
 
 function getNodeSize(node){
-  return node.level
+  return node.level*50;
 }
 
 function getNodeSizeArrow(node){
   // return node.level === 1 ? '15' : '7'
-console.log(node.id);
   if (node.level===1) {
     console.log("get larget one");
     return 15;}
@@ -141,14 +140,21 @@ svg.attr('width', width).attr('height', height)
 var linkForce = d3
   .forceLink()
   .id(function (link) { return link.id })
-  .strength(function (link) { return link.strength })
+  .strength(function (link) { return link.strength*0.5 })
+  .distance(function (link) { return 100})
 
+var collision = d3
+      .forceCollide()
+      .radius(function(circle){return 50})
 
 var simulation = d3
   .forceSimulation()
   .force('link', linkForce)
-  .force('charge', d3.forceManyBody().strength(-10000))
+  .force('charge', d3.forceManyBody().strength(-30))
   .force('center', d3.forceCenter(width / 2, height / 2))
+  .force('collision', collision);
+
+  // d3.forceCollide(80);
 
 var dragDrop = d3.drag().on('start', function (node) {
   node.fx = node.x
@@ -226,6 +232,7 @@ simulation.nodes(nodes).on('tick', () => {
   nodeElements
     .attr('cx', function (node) { return node.x })
     .attr('cy', function (node) { return node.y })
+
   textElements
     .attr('x', function (node) { return node.x })
     .attr('y', function (node) { return node.y })
@@ -235,6 +242,7 @@ simulation.nodes(nodes).on('tick', () => {
     .attr('x2', function (link) { return link.target.x })
     .attr('y2', function (link) { return link.target.y })
 })
+
 
 //for fish eyes
 // var fisheye = d3.fisheye.circular()
@@ -271,11 +279,9 @@ for (i = 0; i < nodes.length; i++) {
 
 };
 links.forEach(function (d) {
-  console.log(d);
     linkedByIndex[d.source + "," + d.target] = 1;
 });
 
-        console.log(linkedByIndex);
 
 //This function looks up whether a pair are neighbours
 function neighboring(a, b) {
