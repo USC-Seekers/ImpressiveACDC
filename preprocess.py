@@ -20,7 +20,7 @@ def read_cluster(fileName):
 # Read dependency file
 def read_deps(fileName):
     deps = []
-    with open(dependencyFile, 'r') as fd:
+    with open(fileName, 'r') as fd:
         for line in fd:
             row = line.strip().split()
             deps.append((row[1], row[2]))
