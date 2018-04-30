@@ -1,0 +1,461 @@
+{
+  "nodes": [
+    {
+      "id": "org.apache.log4j.ss",
+      "label": "org.apache.log4j.ss",
+      "level": 0.2714285714285714,
+      "x": -3.309016994374947,
+      "y": -6.379881062640301,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "label": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "level": 0.7,
+      "x": -2.1631189606246317,
+      "y": 0.9510565162951536,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.filter.ss",
+      "label": "org.apache.logging.log4j.core.filter.ss",
+      "level": 0.5571428571428572,
+      "x": 0.5000000000000001,
+      "y": -1.5388417685876268,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "label": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "level": 0.6571428571428571,
+      "x": -164.98935688187396,
+      "y": 14.90663355985576,
+      "type": "graphics"
+    },
+    {
+      "id": "org.openjdk.jmh.infra.generated.ss",
+      "label": "org.openjdk.jmh.infra.generated.ss",
+      "level": 0.4857142857142857,
+      "x": -2.1909830056250525,
+      "y": 0.5877852522924728,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.ss",
+      "level": 0.6714285714285714,
+      "x": -0.6631189606246313,
+      "y": 3.216440812888141,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "level": 1.0,
+      "x": -0.6180339887498947,
+      "y": 0.0,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "label": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "level": 0.7,
+      "x": -0.30901699437494734,
+      "y": 0.9510565162951536,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.util.ss",
+      "label": "org.apache.logging.log4j.core.util.ss",
+      "level": 0.5285714285714286,
+      "x": -0.7360679774997894,
+      "y": 2.2653842965929876,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.flume.appender.ss",
+      "label": "org.apache.logging.log4j.flume.appender.ss",
+      "level": 0.6,
+      "x": -3.6631189606246317,
+      "y": -4.392011317473089,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.message.ss",
+      "label": "org.apache.logging.log4j.message.ss",
+      "level": 0.5,
+      "x": -1.6180339887498945,
+      "y": -3.077683537175254,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.slf4j.ss",
+      "label": "org.apache.logging.slf4j.ss",
+      "level": 0.38571428571428573,
+      "x": 0.5000000000000002,
+      "y": -4.616525305762881,
+      "type": "io"
+    },
+    {
+      "id": "org.slf4j.impl.ss",
+      "label": "org.slf4j.impl.ss",
+      "level": 0.24285714285714285,
+      "x": -5.545084971874736,
+      "y": -0.9510565162951541,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.log4j.xml.ss",
+      "label": "org.apache.log4j.xml.ss",
+      "level": 0.32857142857142857,
+      "x": -1.0,
+      "y": -1.2246467991473532e-16,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.spi.ss",
+      "label": "org.apache.logging.log4j.spi.ss",
+      "level": 0.44285714285714284,
+      "x": -2.1909830056250525,
+      "y": 0.5877852522924728,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.net.ss",
+      "label": "org.apache.logging.log4j.core.net.ss",
+      "level": 0.5142857142857142,
+      "x": 1.2360679774997898,
+      "y": -3.526711513754839,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.jmx.gui.ss",
+      "label": "org.apache.logging.log4j.jmx.gui.ss",
+      "level": 0.5,
+      "x": 0.6909830056250529,
+      "y": -2.1266270208801,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.perf.jmh.ss",
+      "label": "org.apache.logging.log4j.perf.jmh.ss",
+      "level": 0.5142857142857142,
+      "x": 0.6909830056250527,
+      "y": -0.22451398828979263,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "label": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "level": 0.5714285714285714,
+      "x": -1.1180339887498945,
+      "y": -2.7144122731725733,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.util.ss",
+      "label": "org.apache.logging.log4j.util.ss",
+      "level": 0.45714285714285713,
+      "x": 2.4270509831248424,
+      "y": -1.7633557568774194,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.db.jpa.converter.ss",
+      "label": "org.apache.logging.log4j.core.appender.db.jpa.converter.ss",
+      "level": 0.8285714285714286,
+      "x": -0.6180339887498947,
+      "y": -1.9021130325903073,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.ss",
+      "label": "org.apache.logging.log4j.core.config.ss",
+      "level": 0.5571428571428572,
+      "x": 3.4549150281252636,
+      "y": -3.7512255020446315,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.pattern.ss",
+      "label": "org.apache.logging.log4j.core.pattern.ss",
+      "level": 0.5714285714285714,
+      "x": -5.753288904374107,
+      "y": -12.000463447834317,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.tools.ss",
+      "label": "org.apache.logging.log4j.core.tools.ss",
+      "level": 0.5428571428571428,
+      "x": -0.30901699437494734,
+      "y": 0.9510565162951536,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.samples.app.ss",
+      "label": "org.apache.logging.log4j.samples.app.ss",
+      "level": 0.5571428571428572,
+      "x": -1.118033988749895,
+      "y": -1.538841768587627,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.jackson.ss",
+      "label": "org.apache.logging.log4j.core.jackson.ss",
+      "level": 0.5714285714285714,
+      "x": -8.399186938124421,
+      "y": -4.755282581475768,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.layout.ss",
+      "label": "org.apache.logging.log4j.core.layout.ss",
+      "level": 0.5571428571428572,
+      "x": -5.326237921249263,
+      "y": -9.510565162951536,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.net.server.ss",
+      "label": "org.apache.logging.log4j.core.net.server.ss",
+      "level": 0.6142857142857143,
+      "x": -1.0450849718747364,
+      "y": -7.469694854648342,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.io.ss",
+      "label": "org.apache.logging.log4j.io.ss",
+      "level": 0.42857142857142855,
+      "x": 1.4549150281252627,
+      "y": -13.98833319300153,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.jcl.ss",
+      "label": "org.apache.logging.log4j.jcl.ss",
+      "level": 0.44285714285714284,
+      "x": -2.3090169943749475,
+      "y": 0.9510565162951534,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.async.ss",
+      "label": "org.apache.logging.log4j.core.async.ss",
+      "level": 0.5428571428571428,
+      "x": 2.73606797749979,
+      "y": -1.5388417685876272,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.status.ss",
+      "label": "org.apache.logging.log4j.core.config.status.ss",
+      "level": 0.6571428571428571,
+      "x": 1.0000000000000002,
+      "y": -3.077683537175254,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.lookup.ss",
+      "label": "org.apache.logging.log4j.core.lookup.ss",
+      "level": 0.5571428571428572,
+      "x": -0.4721359549995783,
+      "y": 2.220446049250313e-16,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.ss",
+      "label": "org.apache.logging.log4j.core.appender.ss",
+      "level": 0.5857142857142857,
+      "x": -3.017220926874316,
+      "y": -17.792559258182145,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.mom.ss",
+      "label": "org.apache.logging.log4j.core.appender.mom.ss",
+      "level": 0.6428571428571429,
+      "x": 0.19098300562505277,
+      "y": -2.4898982848827806,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "level": 0.8142857142857143,
+      "x": -1.3090169943749475,
+      "y": 0.9510565162951535,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.jul.ss",
+      "label": "org.apache.logging.log4j.jul.ss",
+      "level": 0.44285714285714284,
+      "x": 5.545084971874737,
+      "y": -1.8491124694543242,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.web.ss",
+      "label": "org.apache.logging.log4j.web.ss",
+      "level": 0.44285714285714284,
+      "x": 4.045084971874738,
+      "y": -1.0368132288720586,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.impl.ss",
+      "label": "org.apache.logging.log4j.core.impl.ss",
+      "level": 0.5285714285714286,
+      "x": -1.5,
+      "y": 0.3632712640026803,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "label": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "level": 0.6857142857142857,
+      "x": -0.4999999999999999,
+      "y": -1.538841768587627,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.yaml.ss",
+      "label": "org.apache.logging.log4j.core.config.yaml.ss",
+      "level": 0.6285714285714286,
+      "x": -0.927050983124842,
+      "y": 2.853169548885461,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.net.ssl.ss",
+      "label": "org.apache.logging.log4j.core.net.ssl.ss",
+      "level": 0.5714285714285714,
+      "x": 0.6909830056250525,
+      "y": -5.204310558055354,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.status.ss",
+      "label": "org.apache.logging.log4j.status.ss",
+      "level": 0.4857142857142857,
+      "x": 0.07294901687515798,
+      "y": 1.6775990443005147,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "label": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "level": 0.7,
+      "x": -4.635254915624212,
+      "y": -8.559508646656383,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "level": 0.7428571428571429,
+      "x": -0.23606797749978925,
+      "y": 2.628655560595668,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.osgi.ss",
+      "label": "org.apache.logging.log4j.core.osgi.ss",
+      "level": 0.5285714285714286,
+      "x": -0.6180339887498947,
+      "y": 1.9021130325903073,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.ss",
+      "label": "org.apache.logging.log4j.ss",
+      "level": 0.38571428571428573,
+      "x": -1.6909830056250525,
+      "y": 0.5020285397155682,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "label": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "level": 0.7142857142857143,
+      "x": 2.118033988749895,
+      "y": -0.8122992405822658,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "label": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "level": 0.7142857142857143,
+      "x": -1.1180339887498945,
+      "y": -1.538841768587627,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.logging.log4j.nosql.appender.ss",
+      "label": "org.apache.logging.log4j.nosql.appender.ss",
+      "level": 0.6,
+      "x": -1.2360679774997894,
+      "y": 3.8042260651806146,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.routing.ss",
+      "label": "org.apache.logging.log4j.core.appender.routing.ss",
+      "level": 0.7,
+      "x": -1.8541019662496843,
+      "y": 1.9021130325903073,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.json.ss",
+      "label": "org.apache.logging.log4j.core.config.json.ss",
+      "level": 0.6285714285714286,
+      "x": -0.30901699437494734,
+      "y": 0.9510565162951536,
+      "type": "sql"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.ss",
+      "label": "org.apache.logging.log4j.core.ss",
+      "level": 0.45714285714285713,
+      "x": -0.6909830056250525,
+      "y": 0.2245139882897924,
+      "type": "graphics"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "level": 0.7857142857142857,
+      "x": 2.0,
+      "y": -0.44902797657958526,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.jmx.ss",
+      "label": "org.apache.logging.log4j.core.jmx.ss",
+      "level": 0.5142857142857142,
+      "x": 5.045084971874737,
+      "y": -12.171976872988129,
+      "type": "networking"
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.xml.ss",
+      "label": "org.apache.logging.log4j.core.config.xml.ss",
+      "level": 0.6142857142857143,
+      "x": -0.30901699437494734,
+      "y": -0.9510565162951536,
+      "type": "io"
+    },
+    {
+      "id": "org.apache.log4j.config.ss",
+      "label": "org.apache.log4j.config.ss",
+      "level": 0.37142857142857144,
+      "x": -0.6180339887498947,
+      "y": 0.0,
+      "type": "graphics"
+    }
+  ],
+  "links": []
+}
