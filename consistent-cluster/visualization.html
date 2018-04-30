@@ -35,6 +35,7 @@
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 <script>
+    var container = null;
     var svg = null;
     var nodes = null;
     var links = null;
@@ -150,6 +151,9 @@
         d.dx = d.dx + d3.event.x;
         d.dy = d.dy + d3.event.y;
     };
+    var zooming = function () {
+        container.attr("transform", d3.event.transform);
+    };
 
 
     d3.json("consistent.json", function (error, graph) {
@@ -189,7 +193,7 @@
         svg = d3.select("svg");
         svg.attr('width', width).attr('height', height);
 
-        var container = svg.append("g").attr("class", "everything");
+        container = svg.append("g").attr("class", "everything");
 
         d3Links = container
             .append("g")
@@ -256,6 +260,8 @@
             .attr("y", function (d) {
                 return d.dy
             });
+
+        d3.zoom().on("zoom", zooming)(svg);
     });
 </script>
 
