@@ -23,12 +23,11 @@
 <body>
 <div class="ui-widget">
     <label for="search"></label><input id="search">
-    <button type="button" onclick="searchNode()">Search</button>
+    <button id="search-button">Search</button>
 </div>
 <svg id="svg" width="1200" height="800"></svg>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
 <script type='text/javascript' src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -38,15 +37,35 @@
     var container = null;
     var svg = null;
     var nodes = null;
+    var nodesAutoComplete = [];
     var links = null;
     var connected = null;
     var nodeDict = null;
     var d3Nodes = null;
     var d3Links = null;
     var d3Texts = null;
+    var connectedToggle = 0;
     var width = 1200;
     var height = 800;
     var colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#FD9898'];
+
+    $(function () {
+        $("#search").autocomplete({source: nodesAutoComplete});
+        $("#search-button").click(function () {
+            if (svg === null) return;
+            var searchId = $("#search").val();
+
+            d3Nodes.style("opacity", function(node) {
+                return node.id !== searchId && !neighboring(nodeDict[searchId], node) ? 0.1 : 1;
+            });
+            d3Links.style("opacity", function (link) {
+                return link.source !== searchId && link.target !== searchId ? 0.1 : 1;
+            });
+            d3Texts.style("display", function (node) {
+                return node.id !== searchId ? "none" : "";
+            });
+        });
+    });
 
     var getNodeSize = function (node) {
         return node.level * 20;
@@ -111,7 +130,6 @@
         return (connected[a.id] && connected[a.id][b.id]) || (connected[b.id] && connected[b.id][a.id]);
     };
 
-    var connectedToggle = 0;
     var connectedNodes = function () {
         if (connectedToggle === 0) {
             var node = d3.select(this).node().__data__;
@@ -137,13 +155,19 @@
         var curX = d.dx + d3.event.x;
         var curY = d.dy + d3.event.y;
         d3.select(this).attr("cx", curX).attr("cy", curY);
-        d3Links.filter(function (link) {return link.source === d.id;})
+        d3Links.filter(function (link) {
+            return link.source === d.id;
+        })
             .attr("x1", curX)
             .attr("y1", curY);
-        d3Links.filter(function (link) {return link.target === d.id})
+        d3Links.filter(function (link) {
+            return link.target === d.id
+        })
             .attr("x2", curX)
             .attr("y2", curY);
-        d3Texts.filter(function (o) {return o.id === d.id})
+        d3Texts.filter(function (o) {
+            return o.id === d.id
+        })
             .attr("x", curX)
             .attr("y", curY);
     };
@@ -164,6 +188,7 @@
             node.radius = getNodeSize(node);
             node.color = getNodeColor(node);
             nodeDict[node.id] = node;
+            nodesAutoComplete.push(node.id);
             return node;
         });
         connected = {};
