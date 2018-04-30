@@ -2,9 +2,32 @@ from ACDC import ACDC
 from RELAX import RELAX
 from PIL import Image, ImageDraw
 from preprocess import anal_cluster_deps, read_deps
-from JSONOutput import output
 import math
+import json
 
+
+def output(path, clusters, adj_list):
+    # clusters = [(x, y, s, n, t)]
+    # x: horizontal position
+    # y: vertical position
+    # s: relative radius
+    # n: cluster name
+    # t: type
+
+    json_root = {"nodes": [], "links": []}
+    for (x, y, s, n, t) in clusters:
+        json_root["nodes"].append({"id": n, "label": n, "level": s, "x": x, "y": y, "type": t})
+    for cluster_name in adj_list:
+        cluster = adj_list[cluster_name]
+        for dest_cluster in cluster:
+            json_root["links"].append({
+                "target": dest_cluster,
+                "source": cluster_name,
+                "strength": cluster[dest_cluster]
+            })
+
+    f = open(path, 'w')
+    json.dump(json_root, f)
 
 def calc_type(pos, categories_vector):
     # pos: (pos_y, pos_x)
@@ -19,9 +42,9 @@ def calc_type(pos, categories_vector):
     return cluster_type
 
 
-if __name__ == "__main__":
-    acdc = ACDC("log4j-2.1_acdc_clustered.rsf")
-    relax = RELAX("log4j-2.1_relax_clusters.rsf")
+def generate(acdc_cluster, relax_cluster, dep, out_file):
+    acdc = ACDC(acdc_cluster)
+    relax = RELAX(relax_cluster)
 
     membership = acdc.get_adapted_membership()
     class_cnt = acdc.get_adapted_cnt_class()
@@ -59,6 +82,10 @@ if __name__ == "__main__":
              cluster_name,
              calc_type((pos_y, pos_x), categories_vectors))
         )
-        deps = read_deps("../input/log4j-2.1_deps.rsf")
+        deps = read_deps(dep)
         adj_list = anal_cluster_deps(membership, deps)
-        output("consistent.json", clusters_pos, adj_list)
+        output(out_file, clusters_pos, adj_list)
+
+
+if __name__ == "__main__":
+    generate("log4j-2.1_acdc_clustered.rsf", "log4j-2.1_relax_clusters.rsf", "../input/log4j-2.1_deps.rsf", "consistent.json")

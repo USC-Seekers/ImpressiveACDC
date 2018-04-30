@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "id": "org.apache.hadoop.conf.ss",
+      "label": "org.apache.hadoop.conf.ss",
+      "level": 0.05084745762711865
+    },
+    {
+      "id": "org.apache.hadoop.dfs.ss",
+      "label": "org.apache.hadoop.dfs.ss",
+      "level": 0.3983050847457627
+    },
+    {
+      "id": "org.apache.hadoop.fs.ss",
+      "label": "org.apache.hadoop.fs.ss",
+      "level": 0.19491525423728814
+    },
+    {
+      "id": "org.apache.hadoop.io.ss",
+      "label": "org.apache.hadoop.io.ss",
+      "level": 0.4152542372881356
+    },
+    {
+      "id": "org.apache.hadoop.ipc.ss",
+      "label": "org.apache.hadoop.ipc.ss",
+      "level": 0.1440677966101695
+    },
+    {
+      "id": "org.apache.hadoop.mapred.ss",
+      "label": "org.apache.hadoop.mapred.ss",
+      "level": 1.0
+    },
+    {
+      "id": "org.apache.hadoop.metrics.ganglia.ss",
+      "label": "org.apache.hadoop.metrics.ganglia.ss",
+      "level": 0.01694915254237288
+    },
+    {
+      "id": "org.apache.hadoop.metrics.spi.ss",
+      "label": "org.apache.hadoop.metrics.spi.ss",
+      "level": 0.1271186440677966
+    },
+    {
+      "id": "org.apache.hadoop.record.compiler.generated.ss",
+      "label": "org.apache.hadoop.record.compiler.generated.ss",
+      "level": 0.1694915254237288
+    },
+    {
+      "id": "org.apache.hadoop.record.compiler.ss",
+      "label": "org.apache.hadoop.record.compiler.ss",
+      "level": 0.03389830508474576
+    },
+    {
+      "id": "org.apache.hadoop.record.ss",
+      "label": "org.apache.hadoop.record.ss",
+      "level": 0.19491525423728814
+    },
+    {
+      "id": "org.apache.hadoop.util.ss",
+      "label": "org.apache.hadoop.util.ss",
+      "level": 0.05084745762711865
+    }
+  ],
+  "links": [
+    {
+      "target": "org.apache.hadoop.conf.ss",
+      "source": "org.apache.hadoop.mapred.ss",
+      "strength": 0.22580645161290322
+    },
+    {
+      "target": "org.apache.hadoop.io.ss",
+      "source": "org.apache.hadoop.mapred.ss",
+      "strength": 1.0
+    },
+    {
+      "target": "org.apache.hadoop.fs.ss",
+      "source": "org.apache.hadoop.mapred.ss",
+      "strength": 0.3763440860215054
+    },
+    {
+      "target": "org.apache.hadoop.util.ss",
+      "source": "org.apache.hadoop.mapred.ss",
+      "strength": 0.11827956989247312
+    },
+    {
+      "target": "org.apache.hadoop.ipc.ss",
+      "source": "org.apache.hadoop.mapred.ss",
+      "strength": 0.13978494623655913
+    },
+    {
+      "target": "org.apache.hadoop.dfs.ss",
+      "source": "org.apache.hadoop.mapred.ss",
+      "strength": 0.043010752688172046
+    },
+    {
+      "target": "org.apache.hadoop.io.ss",
+      "source": "org.apache.hadoop.conf.ss",
+      "strength": 0.010752688172043012
+    },
+    {
+      "target": "org.apache.hadoop.fs.ss",
+      "source": "org.apache.hadoop.conf.ss",
+      "strength": 0.021505376344086023
+    },
+    {
+      "target": "org.apache.hadoop.dfs.ss",
+      "source": "org.apache.hadoop.conf.ss",
+      "strength": 0.010752688172043012
+    },
+    {
+      "target": "org.apache.hadoop.util.ss",
+      "source": "org.apache.hadoop.conf.ss",
+      "strength": 0.010752688172043012
+    },
+    {
+      "target": "org.apache.hadoop.mapred.ss",
+      "source": "org.apache.hadoop.fs.ss",
+      "strength": 0.010752688172043012
+    },
+    {
+      "target": "org.apache.hadoop.conf.ss",
+      "source": "org.apache.hadoop.fs.ss",
+      "strength": 0.08602150537634409
+    },
+    {
+      "target": "org.apache.hadoop.io.ss",
+      "source": "org.apache.hadoop.fs.ss",
+      "strength": 0.11827956989247312
+    },
+    {
+      "target": "org.apache.hadoop.util.ss",
+      "source": "org.apache.hadoop.fs.ss",
+      "strength": 0.021505376344086023
+    },
+    {
+      "target": "org.apache.hadoop.dfs.ss",
+      "source": "org.apache.hadoop.fs.ss",
+      "strength": 0.03225806451612903
+    },
+    {
+      "target": "org.apache.hadoop.mapred.ss",
+      "source": "org.apache.hadoop.dfs.ss",
+      "strength": 0.3010752688172043
+    },
+    {
+      "target": "org.apache.hadoop.conf.ss",
+      "source": "org.apache.hadoop.dfs.ss",
+      "strength": 0.12903225806451613
+    },
+    {
+      "target": "org.apache.hadoop.io.ss",
+      "source": "org.apache.hadoop.dfs.ss",
+      "strength": 0.26881720430107525
+    },
+    {
+      "target": "org.apache.hadoop.fs.ss",
+      "source": "org.apache.hadoop.dfs.ss",
+      "strength": 0.15053763440860216
+    },
+    {
+      "target": "org.apache.hadoop.ipc.ss",
+      "source": "org.apache.hadoop.dfs.ss",
+      "strength": 0.06451612903225806
+    },
+    {
+      "target": "org.apache.hadoop.util.ss",
+      "source": "org.apache.hadoop.dfs.ss",
+      "strength": 0.043010752688172046
+    },
+    {
+      "target": "org.apache.hadoop.fs.ss",
+      "source": "org.apache.hadoop.io.ss",
+      "strength": 0.21505376344086022
+    },
+    {
+      "target": "org.apache.hadoop.conf.ss",
+      "source": "org.apache.hadoop.io.ss",
+      "strength": 0.08602150537634409
+    },
+    {
+      "target": "org.apache.hadoop.mapred.ss",
+      "source": "org.apache.hadoop.io.ss",
+      "strength": 0.24731182795698925
+    },
+    {
+      "target": "org.apache.hadoop.util.ss",
+      "source": "org.apache.hadoop.io.ss",
+      "strength": 0.021505376344086023
+    },
+    {
+      "target": "org.apache.hadoop.mapred.ss",
+      "source": "org.apache.hadoop.ipc.ss",
+      "strength": 0.17204301075268819
+    },
+    {
+      "target": "org.apache.hadoop.conf.ss",
+      "source": "org.apache.hadoop.ipc.ss",
+      "strength": 0.07526881720430108
+    },
+    {
+      "target": "org.apache.hadoop.util.ss",
+      "source": "org.apache.hadoop.ipc.ss",
+      "strength": 0.03225806451612903
+    },
+    {
+      "target": "org.apache.hadoop.io.ss",
+      "source": "org.apache.hadoop.ipc.ss",
+      "strength": 0.07526881720430108
+    },
+    {
+      "target": "org.apache.hadoop.metrics.spi.ss",
+      "source": "org.apache.hadoop.metrics.ganglia.ss",
+      "strength": 0.043010752688172046
+    },
+    {
+      "target": "org.apache.hadoop.record.compiler.generated.ss",
+      "source": "org.apache.hadoop.record.compiler.ss",
+      "strength": 0.043010752688172046
+    },
+    {
+      "target": "org.apache.hadoop.record.compiler.ss",
+      "source": "org.apache.hadoop.record.compiler.generated.ss",
+      "strength": 0.021505376344086023
+    },
+    {
+      "target": "org.apache.hadoop.conf.ss",
+      "source": "org.apache.hadoop.util.ss",
+      "strength": 0.010752688172043012
+    },
+    {
+      "target": "org.apache.hadoop.dfs.ss",
+      "source": "org.apache.hadoop.util.ss",
+      "strength": 0.010752688172043012
+    }
+  ]
+}

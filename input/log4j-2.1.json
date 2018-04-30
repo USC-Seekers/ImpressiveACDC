@@ -1,0 +1,3636 @@
+{
+  "nodes": [
+    {
+      "id": "org.apache.log4j.ss",
+      "label": "org.apache.log4j.ss",
+      "level": 0.13793103448275862
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "label": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "level": 0.0603448275862069
+    },
+    {
+      "id": "org.apache.logging.log4j.core.filter.ss",
+      "label": "org.apache.logging.log4j.core.filter.ss",
+      "level": 0.02586206896551724
+    },
+    {
+      "id": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "label": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "level": 1.0
+    },
+    {
+      "id": "org.openjdk.jmh.infra.generated.ss",
+      "label": "org.openjdk.jmh.infra.generated.ss",
+      "level": 0.021551724137931036
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.ss",
+      "level": 0.05603448275862069
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "level": 0.008620689655172414
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "label": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "level": 0.01293103448275862
+    },
+    {
+      "id": "org.apache.logging.log4j.core.util.ss",
+      "label": "org.apache.logging.log4j.core.util.ss",
+      "level": 0.04310344827586207
+    },
+    {
+      "id": "org.apache.logging.log4j.flume.appender.ss",
+      "label": "org.apache.logging.log4j.flume.appender.ss",
+      "level": 0.2413793103448276
+    },
+    {
+      "id": "org.apache.logging.log4j.message.ss",
+      "label": "org.apache.logging.log4j.message.ss",
+      "level": 0.07327586206896551
+    },
+    {
+      "id": "org.apache.logging.slf4j.ss",
+      "label": "org.apache.logging.slf4j.ss",
+      "level": 0.05603448275862069
+    },
+    {
+      "id": "org.slf4j.impl.ss",
+      "label": "org.slf4j.impl.ss",
+      "level": 0.09482758620689655
+    },
+    {
+      "id": "org.apache.log4j.xml.ss",
+      "label": "org.apache.log4j.xml.ss",
+      "level": 0.004310344827586207
+    },
+    {
+      "id": "org.apache.logging.log4j.spi.ss",
+      "label": "org.apache.logging.log4j.spi.ss",
+      "level": 0.021551724137931036
+    },
+    {
+      "id": "org.apache.logging.log4j.core.net.ss",
+      "label": "org.apache.logging.log4j.core.net.ss",
+      "level": 0.1206896551724138
+    },
+    {
+      "id": "org.apache.logging.log4j.jmx.gui.ss",
+      "label": "org.apache.logging.log4j.jmx.gui.ss",
+      "level": 0.05172413793103448
+    },
+    {
+      "id": "org.apache.logging.log4j.perf.jmh.ss",
+      "label": "org.apache.logging.log4j.perf.jmh.ss",
+      "level": 0.0603448275862069
+    },
+    {
+      "id": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "label": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "level": 0.04310344827586207
+    },
+    {
+      "id": "org.apache.logging.log4j.util.ss",
+      "label": "org.apache.logging.log4j.util.ss",
+      "level": 0.07327586206896551
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.db.jpa.converter.ss",
+      "label": "org.apache.logging.log4j.core.appender.db.jpa.converter.ss",
+      "level": 0.017241379310344827
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.ss",
+      "label": "org.apache.logging.log4j.core.config.ss",
+      "level": 0.14655172413793102
+    },
+    {
+      "id": "org.apache.logging.log4j.core.pattern.ss",
+      "label": "org.apache.logging.log4j.core.pattern.ss",
+      "level": 0.27586206896551724
+    },
+    {
+      "id": "org.apache.logging.log4j.core.tools.ss",
+      "label": "org.apache.logging.log4j.core.tools.ss",
+      "level": 0.034482758620689655
+    },
+    {
+      "id": "org.apache.logging.log4j.samples.app.ss",
+      "label": "org.apache.logging.log4j.samples.app.ss",
+      "level": 0.09913793103448276
+    },
+    {
+      "id": "org.apache.logging.log4j.core.jackson.ss",
+      "label": "org.apache.logging.log4j.core.jackson.ss",
+      "level": 0.25862068965517243
+    },
+    {
+      "id": "org.apache.logging.log4j.core.layout.ss",
+      "label": "org.apache.logging.log4j.core.layout.ss",
+      "level": 0.1810344827586207
+    },
+    {
+      "id": "org.apache.logging.log4j.core.net.server.ss",
+      "label": "org.apache.logging.log4j.core.net.server.ss",
+      "level": 0.06896551724137931
+    },
+    {
+      "id": "org.apache.logging.log4j.io.ss",
+      "label": "org.apache.logging.log4j.io.ss",
+      "level": 0.1896551724137931
+    },
+    {
+      "id": "org.apache.logging.log4j.jcl.ss",
+      "label": "org.apache.logging.log4j.jcl.ss",
+      "level": 0.02586206896551724
+    },
+    {
+      "id": "org.apache.logging.log4j.core.async.ss",
+      "label": "org.apache.logging.log4j.core.async.ss",
+      "level": 0.15086206896551724
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.status.ss",
+      "label": "org.apache.logging.log4j.core.config.status.ss",
+      "level": 0.021551724137931036
+    },
+    {
+      "id": "org.apache.logging.log4j.core.lookup.ss",
+      "label": "org.apache.logging.log4j.core.lookup.ss",
+      "level": 0.09051724137931035
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.ss",
+      "label": "org.apache.logging.log4j.core.appender.ss",
+      "level": 0.20689655172413793
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.mom.ss",
+      "label": "org.apache.logging.log4j.core.appender.mom.ss",
+      "level": 0.034482758620689655
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "level": 0.021551724137931036
+    },
+    {
+      "id": "org.apache.logging.log4j.jul.ss",
+      "label": "org.apache.logging.log4j.jul.ss",
+      "level": 0.07327586206896551
+    },
+    {
+      "id": "org.apache.logging.log4j.web.ss",
+      "label": "org.apache.logging.log4j.web.ss",
+      "level": 0.06896551724137931
+    },
+    {
+      "id": "org.apache.logging.log4j.core.impl.ss",
+      "label": "org.apache.logging.log4j.core.impl.ss",
+      "level": 0.034482758620689655
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "label": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "level": 0.034482758620689655
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.yaml.ss",
+      "label": "org.apache.logging.log4j.core.config.yaml.ss",
+      "level": 0.02586206896551724
+    },
+    {
+      "id": "org.apache.logging.log4j.core.net.ssl.ss",
+      "label": "org.apache.logging.log4j.core.net.ssl.ss",
+      "level": 0.04310344827586207
+    },
+    {
+      "id": "org.apache.logging.log4j.status.ss",
+      "label": "org.apache.logging.log4j.status.ss",
+      "level": 0.034482758620689655
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "label": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "level": 0.1206896551724138
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "level": 0.06465517241379311
+    },
+    {
+      "id": "org.apache.logging.log4j.core.osgi.ss",
+      "label": "org.apache.logging.log4j.core.osgi.ss",
+      "level": 0.017241379310344827
+    },
+    {
+      "id": "org.apache.logging.log4j.ss",
+      "label": "org.apache.logging.log4j.ss",
+      "level": 0.06465517241379311
+    },
+    {
+      "id": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "label": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "level": 0.03017241379310345
+    },
+    {
+      "id": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "label": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "level": 0.08620689655172414
+    },
+    {
+      "id": "org.apache.logging.log4j.nosql.appender.ss",
+      "label": "org.apache.logging.log4j.nosql.appender.ss",
+      "level": 0.034482758620689655
+    },
+    {
+      "id": "org.apache.logging.log4j.core.appender.routing.ss",
+      "label": "org.apache.logging.log4j.core.appender.routing.ss",
+      "level": 0.02586206896551724
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.json.ss",
+      "label": "org.apache.logging.log4j.core.config.json.ss",
+      "level": 0.021551724137931036
+    },
+    {
+      "id": "org.apache.logging.log4j.core.ss",
+      "label": "org.apache.logging.log4j.core.ss",
+      "level": 0.02586206896551724
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "label": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "level": 0.125
+    },
+    {
+      "id": "org.apache.logging.log4j.core.jmx.ss",
+      "label": "org.apache.logging.log4j.core.jmx.ss",
+      "level": 0.10344827586206896
+    },
+    {
+      "id": "org.apache.logging.log4j.core.config.xml.ss",
+      "label": "org.apache.logging.log4j.core.config.xml.ss",
+      "level": 0.05172413793103448
+    },
+    {
+      "id": "org.apache.log4j.config.ss",
+      "label": "org.apache.log4j.config.ss",
+      "level": 0.008620689655172414
+    }
+  ],
+  "links": [
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.spi.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.log4j.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.xml.ss",
+      "source": "org.apache.log4j.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.log4j.config.ss",
+      "source": "org.apache.log4j.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.samples.app.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.apache.logging.log4j.samples.app.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.samples.app.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.samples.app.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.samples.app.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.samples.app.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.samples.app.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.samples.app.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.samples.app.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0859375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.09375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.mom.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.09375
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.samples.app.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.spi.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.io.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.spi.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jackson.ss",
+      "source": "org.apache.logging.log4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0703125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.slf4j.impl.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.slf4j.impl.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.slf4j.impl.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.slf4j.impl.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.slf4j.impl.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.slf4j.impl.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.slf4j.impl.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.slf4j.impl.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.slf4j.impl.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.spi.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.core.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0859375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.async.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.jmx.gui.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.status.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.core.jmx.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.2265625
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.1328125
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.09375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.234375
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.async.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.1640625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.109375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.2578125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.mom.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.1015625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0703125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0703125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.core.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0859375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.samples.app.ss",
+      "source": "org.apache.logging.log4j.core.lookup.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.xml.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.yaml.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jackson.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.net.server.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.spi.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.1015625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.171875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.jul.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.09375
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.samples.app.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0859375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.mom.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.apache.logging.log4j.flume.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.spi.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.status.ss",
+      "source": "org.apache.logging.log4j.status.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.109375
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.1171875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.server.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.mom.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0859375
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.spi.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.openjdk.jmh.infra.generated.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 1.0
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "strength": 0.1796875
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.09375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.db.jpa.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.db.jpa.converter.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.server.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.converter.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.converter.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jackson.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.converter.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.appender.db.jpa.converter.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.mom.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.appender.rewrite.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0703125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0859375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.15625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.109375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.1171875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0703125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.109375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.async.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.mom.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.yaml.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.json.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.config.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "source": "org.apache.logging.log4j.core.appender.routing.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.1328125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.core.async.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.1015625
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.2265625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0859375
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.265625
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.pattern.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.web.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.status.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.server.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.yaml.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jackson.ss",
+      "source": "org.apache.logging.log4j.core.config.json.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.mom.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.osgi.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.mom.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.processor.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.config.status.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.config.status.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.config.status.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.status.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.routing.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.config.xml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.server.ss",
+      "source": "org.apache.logging.log4j.core.config.yaml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.json.ss",
+      "source": "org.apache.logging.log4j.core.config.yaml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.config.yaml.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jackson.ss",
+      "source": "org.apache.logging.log4j.core.config.yaml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.config.yaml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.config.yaml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.config.yaml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.config.yaml.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.filter.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.0390625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jackson.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.impl.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.jackson.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.jackson.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.jackson.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.jackson.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.server.ss",
+      "source": "org.apache.logging.log4j.core.jackson.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.jackson.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.jackson.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.core.jackson.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.jmx.gui.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.jmx.gui.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jackson.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0546875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0703125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.046875
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0625
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.impl.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.server.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.samples.app.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.db.jdbc.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.message.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.layout.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.09375
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.078125
+    },
+    {
+      "target": "org.apache.logging.log4j.flume.appender.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.layout.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.lookup.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.core.net.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.net.ssl.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.net.ssl.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.net.ssl.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.pattern.ss",
+      "source": "org.apache.logging.log4j.core.osgi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.core.osgi.ss",
+      "strength": 0.0703125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.osgi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.core.osgi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.util.ss",
+      "source": "org.apache.logging.log4j.core.osgi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.osgi.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.core.osgi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.jmx.ss",
+      "source": "org.apache.logging.log4j.core.osgi.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.core.osgi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.ss",
+      "source": "org.apache.logging.log4j.core.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.core.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.ss",
+      "source": "org.apache.logging.log4j.core.util.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.core.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.core.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.core.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.core.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.core.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.jcl.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.jcl.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.log4j.jcl.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.jcl.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.message.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.message.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.samples.app.ss",
+      "source": "org.apache.logging.log4j.message.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.spi.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.spi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.spi.ss",
+      "strength": 0.03125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.spi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.spi.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.log4j.spi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.log4j.spi.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.apache.logging.log4j.spi.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.mongodb.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.nosql.appender.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.net.ssl.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.plugins.convert.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.web.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.nosql.appender.couchdb.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.generated.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.ss",
+      "strength": 0.1875
+    },
+    {
+      "target": "org.apache.logging.slf4j.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.util.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.spi.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.util.ss",
+      "source": "org.apache.logging.log4j.perf.jmh.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.log4j.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.appender.rolling.ss",
+      "source": "org.apache.logging.log4j.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.log4j.util.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.log4j.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.perf.jmh.jpa.ss",
+      "source": "org.apache.logging.log4j.util.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.spi.ss",
+      "source": "org.apache.logging.slf4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.jul.ss",
+      "source": "org.apache.logging.slf4j.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.io.ss",
+      "source": "org.apache.logging.slf4j.ss",
+      "strength": 0.0234375
+    },
+    {
+      "target": "org.slf4j.impl.ss",
+      "source": "org.apache.logging.slf4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.core.config.ss",
+      "source": "org.apache.logging.slf4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.log4j.ss",
+      "source": "org.apache.logging.slf4j.ss",
+      "strength": 0.015625
+    },
+    {
+      "target": "org.apache.logging.log4j.ss",
+      "source": "org.apache.logging.slf4j.ss",
+      "strength": 0.0078125
+    },
+    {
+      "target": "org.apache.logging.log4j.status.ss",
+      "source": "org.apache.logging.slf4j.ss",
+      "strength": 0.0078125
+    }
+  ]
+}
