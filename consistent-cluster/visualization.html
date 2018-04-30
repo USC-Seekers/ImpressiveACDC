@@ -14,7 +14,6 @@
         }
 
         text {
-            display: none;
             stroke-width: 0;
         }
 
@@ -38,7 +37,12 @@
 <script>
     var svg = null;
     var nodes = null;
+    var links = null;
+    var connected = null;
+    var nodeDict = null;
     var d3Nodes = null;
+    var d3Links = null;
+    var d3Texts = null;
     var width = 1200;
     var height = 800;
     var colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#FD9898'];
@@ -90,7 +94,7 @@
             var diffY = ndy - node.dy;
             var nDisSqr = diffX * diffX + diffY * diffY;
             if (nDisSqr > radiusSumSqr + 100 && nDisSqr < radiusSumSqr + 225) break;
-            else if(nDisSqr < radiusSumSqr + 100) {
+            else if (nDisSqr < radiusSumSqr + 100) {
                 l = m;
             }
             else {
@@ -102,13 +106,69 @@
         return true;
     };
 
+    var neighboring = function (a, b) {
+        return (connected[a.id] && connected[a.id][b.id]) || (connected[b.id] && connected[b.id][a.id]);
+    };
+
+    var connectedToggle = 0;
+    var connectedNodes = function () {
+        if (connectedToggle === 0) {
+            var node = d3.select(this).node().__data__;
+            d3Nodes.style("opacity", function (o) {
+                return neighboring(node, o) || node === o ? 1 : 0.1;
+            });
+            d3Texts.style("display", function (o) {
+                return neighboring(node, o) || node === o ? "" : "none";
+            });
+            d3Links.style("opacity", function (o) {
+                return o.source === node.id || o.target === node.id ? 1 : 0.1;
+            });
+            connectedToggle = 1;
+        }
+        else {
+            d3Nodes.style("opacity", 1);
+            d3Links.style("opacity", 1);
+            d3Texts.style("display", "none");
+            connectedToggle = 0;
+        }
+    };
+    var dragging = function (d) {
+        var curX = d.dx + d3.event.x;
+        var curY = d.dy + d3.event.y;
+        d3.select(this).attr("cx", curX).attr("cy", curY);
+        d3Links.filter(function (link) {return link.source === d.id;})
+            .attr("x1", curX)
+            .attr("y1", curY);
+        d3Links.filter(function (link) {return link.target === d.id})
+            .attr("x2", curX)
+            .attr("y2", curY);
+        d3Texts.filter(function (o) {return o.id === d.id})
+            .attr("x", curX)
+            .attr("y", curY);
+    };
+    var dragEnd = function (d) {
+        d.dx = d.dx + d3.event.x;
+        d.dy = d.dy + d3.event.y;
+    };
+
+
     d3.json("consistent.json", function (error, graph) {
+        nodeDict = {};
         var nodes = graph.nodes.map(function (node) {
             node.dx = getNodePositionX(node);
             node.dy = getNodePositionY(node);
             node.radius = getNodeSize(node);
             node.color = getNodeColor(node);
+            nodeDict[node.id] = node;
             return node;
+        });
+        connected = {};
+        links = graph.links;
+        graph.links.forEach(function (val) {
+            if (!connected[val.source]) {
+                connected[val.source] = {}
+            }
+            connected[val.source][val.target] = true;
         });
         nodes.sort(function (a, b) {
             return (a.x * a.x + a.y * a.y) - (b.x * b.x + b.y * b.y);
@@ -130,14 +190,37 @@
         svg.attr('width', width).attr('height', height);
 
         var container = svg.append("g").attr("class", "everything");
+
+        d3Links = container
+            .append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(links)
+            .enter()
+            .append("line")
+            .attr('x1', function (link) {
+                return nodeDict[link.source].dx;
+            })
+            .attr('y1', function (link) {
+                return nodeDict[link.source].dy;
+            })
+            .attr('x2', function (link) {
+                return nodeDict[link.target].dx;
+            })
+            .attr('y2', function (link) {
+                return nodeDict[link.target].dy;
+            })
+            .attr("stroke-width", 1)
+            .attr("stroke", "rgba(50, 50, 50, 0.2)")
+            .style("marker-end", "url(#suit)");
+
         d3Nodes = container
             .append("g")
             .attr("class", "nodes")
             .selectAll("circle")
             .data(nodes)
-            .enter();
-
-        d3Nodes.append("circle")
+            .enter()
+            .append("circle")
             .attr("r", function (d) {
                 return d.radius;
             })
@@ -149,17 +232,30 @@
             })
             .attr("cy", function (d) {
                 return d.dy
-            });
+            })
+            .call(d3.drag().on("drag", dragging).on("end", dragEnd))
+            .on('click', connectedNodes);
 
-        d3Nodes.append("text")
+        d3Texts = container
+            .append("g")
+            .attr("class", "texts")
+            .selectAll("text")
+            .data(nodes)
+            .enter()
+            .append("text")
             .text(function (node) {
                 return node.label;
             })
+            .style("display", "none")
             .attr("font-size", 7)
             .attr("dx", 15)
             .attr("dy", 4)
-            .attr("x", function (d) {return d.dx})
-            .attr("y", function (d) {return d.dy});
+            .attr("x", function (d) {
+                return d.dx
+            })
+            .attr("y", function (d) {
+                return d.dy
+            });
     });
 </script>
 

@@ -1,7 +1,7 @@
 from ACDC import ACDC
 from RELAX import RELAX
 from PIL import Image, ImageDraw
-from preprocess import anal_cluster_deps
+from preprocess import anal_cluster_deps, read_deps
 from JSONOutput import output
 import math
 
@@ -59,4 +59,6 @@ if __name__ == "__main__":
              cluster_name,
              calc_type((pos_y, pos_x), categories_vectors))
         )
-        output("consistent.json", clusters_pos)
+        deps = read_deps("../input/log4j-2.1_deps.rsf")
+        adj_list = anal_cluster_deps(membership, deps)
+        output("consistent.json", clusters_pos, adj_list)
