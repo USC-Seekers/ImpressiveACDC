@@ -1,3 +1,6 @@
+from functools import reduce
+
+
 class UnionFindNode:
     def __init__(self, package):
         self.package = package
@@ -25,22 +28,30 @@ class UnionFindNode:
 
 class ACDC:
     def __init__(self, filename):
-        self.packages = {}
         self.clusters = {}
         with open(filename) as f:
             while True:
                 cluster_file_line = f.readline()
                 if not cluster_file_line:
                     break
-                (_, package1, package2) = map(lambda x: x.strip(), cluster_file_line.split(' '))
-                if package1 not in self.packages:
-                    self.packages[package1] = UnionFindNode(package1)
-                if package2 not in self.packages:
-                    self.packages[package2] = UnionFindNode(package2)
-                self.packages[package1].union(self.packages[package2])
+                (_, cluster_name, package) = map(lambda x: x.strip(), cluster_file_line.split(' '))
+                if not cluster_name in self.clusters:
+                    self.clusters[cluster_name] = []
+                self.clusters[cluster_name].append(package)
 
-        for package in self.packages:
-            root_node = self.packages[package].get_root()
-            if root_node.package not in self.clusters:
-                self.clusters[root_node.package] = []
-            self.clusters[root_node.package].append(package)
+    def get_adapted_membership(self):
+        rv = {}
+        for cluster_name in self.clusters:
+            for package in self.clusters[cluster_name]:
+                rv[package] = cluster_name
+        return rv
+
+    def get_adapted_cnt_class(self):
+        rv = {}
+        max_count = reduce(lambda prev, item: max(prev, len(item)), self.clusters, 0)
+        for cluster_name in self.clusters:
+            rv[cluster_name] = len(cluster_name) / max_count
+        return rv
+
+
+

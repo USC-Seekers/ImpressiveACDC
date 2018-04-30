@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <style type="text/css">
+        .nodes {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .links {
+            stroke: #999;
+            stroke-opacity: .6;
+        }
+
+        text {
+            display: none;
+            stroke-width: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="ui-widget">
+    <label for="search"></label><input id="search">
+    <button type="button" onclick="searchNode()">Search</button>
+</div>
+<svg id="svg" width="1200" height="800"></svg>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
+<script type='text/javascript' src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script>
+    var svg = null;
+    var nodes = null;
+    var d3Nodes = null;
+    var width = 1200;
+    var height = 800;
+    var colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#FD9898'];
+
+    var getNodeSize = function (node) {
+        return node.level * 20;
+    };
+    var getNodeColor = function (node) {
+        switch (node.type) {
+            case "sql":
+                return colors[0];
+            case "graphics":
+                return colors[1];
+            case "io":
+                return colors[2];
+            case "networking":
+                return colors[3];
+            case "no_match":
+                return colors[4];
+        }
+    };
+    var getNodePositionX = function (node) {
+        var rv = node.x * 30 + width / 2;
+        if (rv < 30) return 30;
+        if (rv > width - 30) return width - 30;
+        return rv;
+    };
+    var getNodePositionY = function (node) {
+        var rv = node.y * 30 + height / 2;
+        if (rv < 30) return 30;
+        if (rv > height - 30) return height - 30;
+        return rv;
+    };
+
+    var moveNode = function (adjNode, node) {
+        var r = Math.max(width, height);
+        var l = 0;
+        var dis = Math.sqrt(adjNode.x * adjNode.x + adjNode.y * adjNode.y);
+        var unitX = adjNode.x / dis;
+        var unitY = adjNode.y / dis;
+        var radiusSumSqr = (adjNode.radius + node.radius) * (adjNode.radius + node.radius);
+        var curDis = (node.dx - adjNode.dx) * (node.dx - adjNode.dx) + (node.dy - adjNode.dy) * (node.dy - adjNode.dy);
+        if (curDis > radiusSumSqr + 100) return false;
+        while (true) {
+            var m = (l + r) / 2;
+            var ndx = adjNode.dx + m * unitX;
+            var ndy = adjNode.dy + m * unitY;
+            var diffX = ndx - node.dx;
+            var diffY = ndy - node.dy;
+            var nDisSqr = diffX * diffX + diffY * diffY;
+            if (nDisSqr > radiusSumSqr + 100 && nDisSqr < radiusSumSqr + 225) break;
+            else if(nDisSqr < radiusSumSqr + 100) {
+                l = m;
+            }
+            else {
+                r = m;
+            }
+        }
+        adjNode.dx += m * unitX;
+        adjNode.dy += m * unitY;
+        return true;
+    };
+
+    d3.json("consistent.json", function (error, graph) {
+        var nodes = graph.nodes.map(function (node) {
+            node.dx = getNodePositionX(node);
+            node.dy = getNodePositionY(node);
+            node.radius = getNodeSize(node);
+            node.color = getNodeColor(node);
+            return node;
+        });
+        nodes.sort(function (a, b) {
+            return (a.x * a.x + a.y * a.y) - (b.x * b.x + b.y * b.y);
+        });
+
+        width = window.innerWidth;
+        height = window.innerHeight;
+        var change = false;
+        do {
+            change = false;
+            for (var i = 0; i < nodes.length; i++) {
+                for (var j = i + 1; j < nodes.length; j++) {
+                    change = change || moveNode(nodes[i], nodes[j]);
+                }
+            }
+        } while (change === true);
+
+        svg = d3.select("svg");
+        svg.attr('width', width).attr('height', height);
+
+        var container = svg.append("g").attr("class", "everything");
+        d3Nodes = container
+            .append("g")
+            .attr("class", "nodes")
+            .selectAll("circle")
+            .data(nodes)
+            .enter();
+
+        d3Nodes.append("circle")
+            .attr("r", function (d) {
+                return d.radius;
+            })
+            .attr("fill", function (d) {
+                return d.color;
+            })
+            .attr("cx", function (d) {
+                return d.dx
+            })
+            .attr("cy", function (d) {
+                return d.dy
+            });
+
+        d3Nodes.append("text")
+            .text(function (node) {
+                return node.label;
+            })
+            .attr("font-size", 7)
+            .attr("dx", 15)
+            .attr("dy", 4)
+            .attr("x", function (d) {return d.dx})
+            .attr("y", function (d) {return d.dy});
+    });
+</script>
+
+</body>
+</html>
