@@ -1,6 +1,5 @@
 var express = require('express');
-var queryString = require('query-string');
-var request = require('request');
+var path = require('path');
 var bodyParser = require('body-parser');
 var deploy = require('./deploy');
 var app = express();
@@ -11,6 +10,14 @@ app.use(bodyParser.json());
 app.post('/github/push', function (req, res) {
     deploy(req.body);
     res.send(null);
+});
+
+app.get('/force/:input', function (req, res) {
+
+});
+
+app.get('/consistent/:input', function (req, res) {
+    res.sendFile(path.join(__dirname, 'public', 'ImpressiveACDC', 'consistent-cluster', 'visualization.html'));
 });
 
 app.use(express.static('public'));

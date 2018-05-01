@@ -179,8 +179,8 @@
         container.attr("transform", d3.event.transform);
     };
 
-
-    d3.json("consistent.json", function (error, graph) {
+    var jsonFile = window.location.pathname.split('/').pop();
+    d3.json("/ImpressiveACDC/input/" + jsonFile, function (error, graph) {
         nodeDict = {};
         var nodes = graph.nodes.map(function (node) {
             node.dx = getNodePositionX(node);
