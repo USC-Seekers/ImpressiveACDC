@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-		<title>D3: A simple packed Bubble Chart</title>
+		<title>Class Visualization</title>
 		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
 
 		<style type="text/css">
@@ -41,6 +41,7 @@ var tooltip = d3.select("body")
 
         console.log(myParam);
         document.getElementById("nameLabel").innerHTML=myParam;
+        document.title="Class Visualization:"+ myParam
         dataset=dataset[myParam];
         console.log(dataset);
         dataset=Object.assign({"children": dataset}, dataset);
@@ -101,9 +102,12 @@ var tooltip = d3.select("body")
             .attr("dy", ".2em")
             .style("text-anchor", "middle")
             .text(function(d) {
+                if (d.data.length>0){
                 var stringset = d.data.split(".");
                 var size = stringset.length;
                 return stringset[size-3]+"."+stringset[size-2]+".";
+                }
+                else return"";
             })
             .attr("font-family", "sans-serif")
             .attr("font-size", function(d){
@@ -115,10 +119,14 @@ var tooltip = d3.select("body")
             .attr("dy", "1.3em")
             .style("text-anchor", "middle")
             .text(function(d) {
+                if (d.data.length>0){
+
                 var stringset = d.data.split(".");
                 var size = stringset.length;
 
-                return stringset[size-1];
+                return stringset[size-1];}
+                else return"";
+
             })
             .attr("font-family",  "Gill Sans", "Gill Sans MT")
             .attr("font-size", function(d){

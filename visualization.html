@@ -104,15 +104,11 @@ function isNeighborLink(node, link) {
 
 
 function getNodeColor(node, neighbors) {
-  if (Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1) {
-    return '#FD7F28';
-  }
+  // if (Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1) {
+  //   return '#AFC8E7';
+  // }
+  return '#0d2e63';
 
-  if (node.level===1) return '#AFC8E7';
-  else if (node.level===2) return '#9ADE8D';
-    else if (node.level===3) return '#9369BB';
-    else if (node.level===4) return '#FD9898';
-  // return node.level === 1 ? 'red' : 'gray'
 }
 
 function getNodeSize(node){
