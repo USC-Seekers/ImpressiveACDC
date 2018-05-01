@@ -6,15 +6,20 @@
 		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
 
 		<style type="text/css">
-
+            h2{
+                text-align: center;
+                padding-bottom: 1px;
+                margin-bottom: 2px;
+            }
 		</style>
 </head>
 <body>
+    <h2 id="nameLabel">Loading...</h2>
 	<script type="text/javascript">
     
 
 var width = window.innerWidth;
-var height = window.innerHeight;
+var height = window.innerHeight-60;
 
 d3.json("Myclass.json", function(error, dataset) {
 var tooltip = d3.select("body")
@@ -35,6 +40,7 @@ var tooltip = d3.select("body")
 
 
         console.log(myParam);
+        document.getElementById("nameLabel").innerHTML=myParam;
         dataset=dataset[myParam];
         console.log(dataset);
         dataset=Object.assign({"children": dataset}, dataset);
