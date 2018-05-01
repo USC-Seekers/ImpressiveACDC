@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+		<title>D3: A simple packed Bubble Chart</title>
+		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+		<style type="text/css">
+
+		</style>
+</head>
+<body>
+	<script type="text/javascript">
+    
+
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+d3.json("Myclass.json", function(error, dataset) {
+
+        console.log(dataset);
+        var myParam = document.location.search.split('input=')[1]
+
+
+        console.log(myParam);
+        dataset=dataset[myParam];
+        console.log(dataset);
+        dataset=Object.assign({"children": dataset}, dataset);
+                console.log(dataset);
+
+        var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+        var bubble = d3.pack(dataset)
+            .size([width, height])
+            .padding(0.5);
+
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("class", "bubble");
+
+        var nodes = d3.hierarchy(dataset)
+            .sum(function(d) { return 20; });
+            console.log(nodes);
+
+        var node = svg.selectAll(".node")
+            .data(bubble(nodes).descendants())
+            .enter()
+            .filter(function(d){
+                return  !d.children
+            })
+            .append("g")
+            .attr("class", "node")
+            .attr("transform", function(d) {
+                return "translate(" + d.x + "," + d.y + ")";
+            });
+            console.log(node);
+
+
+        node.append("title")
+            .text(function(d) {
+                return d.name ;
+            });
+
+        node.append("circle")
+            .attr("r", function(d) {
+                return d.r;
+            })
+            .style("fill", function(d,i) {
+                return color(i);
+            });
+
+         node.append("text")
+            .attr("dy", ".2em")
+            .style("text-anchor", "middle")
+            .text(function(d) {
+                var stringset = d.data.split(".");
+                var size = stringset.length;
+                return stringset[size-3]+"."+stringset[size-2]+".";
+            })
+            .attr("font-family", "sans-serif")
+            .attr("font-size", function(d){
+                return d.r/5;
+            })
+            .attr("fill", "black");
+
+        node.append("text")
+            .attr("dy", "1.3em")
+            .style("text-anchor", "middle")
+            .text(function(d) {
+                var stringset = d.data.split(".");
+                var size = stringset.length;
+
+                return stringset[size-1];
+            })
+            .attr("font-family",  "Gill Sans", "Gill Sans MT")
+            .attr("font-size", function(d){
+                return d.r/6;
+            })
+            .attr("fill", "black");
+
+        d3.select(self.frameElement)
+            .style("height", height + "px")
+            .style("width",width + "px");
+});
+
+
+	</script>
+</body>
+</html>

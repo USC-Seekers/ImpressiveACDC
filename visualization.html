@@ -152,7 +152,7 @@ var linkForce = d3
 
 var collision = d3
       .forceCollide()
-      .radius(function(circle){return 50})
+      .radius(function(circle){return 2;})
 
 var simulation = d3
   .forceSimulation()
@@ -234,9 +234,7 @@ function zoom_actions(){
     .attr("r", getNodeSize)
     .attr("fill", getNodeColor)
     .call(dragDrop)
-    .on('click', connectedNodes); //Added code 
-
-  //  .on('mouseover', selectNode);
+    .on('click', connectedNodes);
 
 textElements = ga.append("g")
   .attr("class", "texts")
@@ -247,6 +245,8 @@ textElements = ga.append("g")
 	  .attr("font-size", getTextSize)
 	  .attr("dx", 15)
     .attr("dy", 4)
+    .on('click', openClass); //Added code 
+
 
 simulation.nodes(nodes).on('tick', () => {
   nodeElements
@@ -387,6 +387,11 @@ function connectedNodes() {
     }
 }
 
+function openClass(d){
+    console.log(d.label);
+    var url= "classVisualization.html?input="+d.label;
+    window.open(url,'_blank');
+}
 
 simulation.force("link").links(links)
 });
