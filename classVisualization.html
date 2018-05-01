@@ -17,6 +17,18 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 
 d3.json("Myclass.json", function(error, dataset) {
+var tooltip = d3.select("body")
+    .append("div")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .style("color", "white")
+    .style("padding", "8px")
+    .style("background-color", "rgba(0, 0, 0, 0.75)")
+    .style("border-radius", "6px")
+    .style("font", "12px sans-serif")
+    .text("tooltip");
+
 
         console.log(dataset);
         var myParam = document.location.search.split('input=')[1]
@@ -69,7 +81,15 @@ d3.json("Myclass.json", function(error, dataset) {
             })
             .style("fill", function(d,i) {
                 return color(i);
-            });
+            })
+            .on("mouseover", function(d) {
+              tooltip.text(d.data.toString());
+              tooltip.style("visibility", "visible");
+              })
+             .on("mousemove", function() {
+             return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");
+             })
+            ;
 
          node.append("text")
             .attr("dy", ".2em")
@@ -81,7 +101,7 @@ d3.json("Myclass.json", function(error, dataset) {
             })
             .attr("font-family", "sans-serif")
             .attr("font-size", function(d){
-                return d.r/5;
+                return d.r/6;
             })
             .attr("fill", "black");
 
