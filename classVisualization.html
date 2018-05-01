@@ -4,24 +4,63 @@
 	<meta charset="utf-8">
 		<title>Class Visualization</title>
 		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
-
 		<style type="text/css">
             h2{
                 text-align: center;
                 padding-bottom: 1px;
                 margin-bottom: 2px;
             }
+            #legend2{
+                overflow:hidden;
+                position: absolute;
+                padding-top: 0px;
+                padding-left: 10%;
+            }
+            .legend2 {
+                margin-right: 1em;
+            }
+            h3 {
+    margin-top: 15px;
+}
+
+.key-dot {
+    display: inline-block;
+    height: 10px;
+    margin-right: .5em;
+    width: 10px;
+}
+
+.legend {
+    margin-right:20px;
+    display: inline-block;
+}
+
+.nomatch { background: #FD7F28;}
+.graphics { background: #AFC8E7;}
+.io { background: #9ADE8D;}
+.sql { background: #9369BB;}
+.networking { background: #f7ec8f;}
+.null { background: #edced7;}
+
 		</style>
 </head>
 <body>
     <h2 id="nameLabel">Loading...</h2>
+    <div id="legend2">
+       <div class="legend2"><span class="key-dot nomatch"></span>No Match </div>
+       <div class="legend2"><span class="key-dot graphics"></span>Graphics </div>
+       <div class="legend2"><span class="key-dot io"></span>IO </div>
+       <div class="legend2"><span class="key-dot sql"></span>SQL </div>
+       <div class="legend2"><span class="key-dot networking"></span>Networking </div>
+       <div class="legend2"><span class="key-dot null"></span>NULL </div>
+    </div>
 	<script type="text/javascript">
     
 
 var width = window.innerWidth;
 var height = window.innerHeight-60;
 
-d3.json("Myclass.json", function(error, dataset) {
+d3.json("input/log4j-2.1-class.json", function(error, dataset) {
 var tooltip = d3.select("body")
     .append("div")
     .style("position", "absolute")
@@ -35,19 +74,21 @@ var tooltip = d3.select("body")
     .text("tooltip");
 
 
-        console.log(dataset);
+        // console.log(dataset);
         var myParam = document.location.search.split('input=')[1]
 
 
         console.log(myParam);
         document.getElementById("nameLabel").innerHTML=myParam;
-        document.title="Class Visualization:"+ myParam
+        document.title="Class Visualization:"+ myParam;
+                console.log(dataset);
+
         dataset=dataset[myParam];
         console.log(dataset);
         dataset=Object.assign({"children": dataset}, dataset);
                 console.log(dataset);
 
-        var color = d3.scaleOrdinal(d3.schemeCategory20);
+        var color =['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#f7ec8f', '#edced7'];
 
         var bubble = d3.pack(dataset)
             .size([width, height])
@@ -87,10 +128,25 @@ var tooltip = d3.select("body")
                 return d.r;
             })
             .style("fill", function(d,i) {
-                return color(i);
+                console.log(d.data.type);
+                if (d.data.type=="no_match")
+                {
+                return color[0];
+                }
+                else if (d.data.type=="graphics")
+                    {return color[1];}
+                else if (d.data.type=="io")
+                    {return color[2];}
+                else if (d.data.type=="sql")
+                    return color[3];
+                else if (d.data.type=="networking"){
+                    return color[4];
+                }
+                else return color[5];
+
             })
             .on("mouseover", function(d) {
-              tooltip.text(d.data.toString());
+              tooltip.text(d.data.name);
               tooltip.style("visibility", "visible");
               })
              .on("mousemove", function() {
@@ -102,8 +158,8 @@ var tooltip = d3.select("body")
             .attr("dy", ".2em")
             .style("text-anchor", "middle")
             .text(function(d) {
-                if (d.data.length>0){
-                var stringset = d.data.split(".");
+                if (d.data.name.length>0){
+                var stringset = d.data.name.split(".");
                 var size = stringset.length;
                 return stringset[size-3]+"."+stringset[size-2]+".";
                 }
@@ -119,9 +175,9 @@ var tooltip = d3.select("body")
             .attr("dy", "1.3em")
             .style("text-anchor", "middle")
             .text(function(d) {
-                if (d.data.length>0){
+                if (d.data.name.length>0){
 
-                var stringset = d.data.split(".");
+                var stringset = d.data.name.split(".");
                 var size = stringset.length;
 
                 return stringset[size-1];}
