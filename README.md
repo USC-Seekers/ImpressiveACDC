@@ -6,7 +6,9 @@ Run `preprocess` to convert ACDC recovery result into json format for visualizat
 $ # For hadoop-0.2.0
 $ python3 preprocess.py input/hadoop-0.2.0_clusters.rsf input/hadoop-0.2.0_class_deps.rsf
 $ # For log4j-2.1
-$ python3 preprocess.py consistent-cluster/log4j-2.1_acdc_clustered.rsf consistent-cluster/log4j-2.1_deps.rsf
+$ python3 preprocess.py input/log4j-2.1_acdc_clustered.rsf input/log4j-2.1_deps.rsf
+$ # For log4j-2.4
+$ python3 preprocess.py input/log4j-2.4_acdc_clustered.rsf input/log4j-2.4_deps.rsf
 ```
 
 ## Release
