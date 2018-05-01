@@ -17,7 +17,7 @@ for version in files:
     name = version.get("name", None)
 
     if acdc is not None and dep is not None and name is not None:
-        m, cnt, _ = read_cluster(acdc)
+        m, _, cnt = read_cluster(acdc)
         d = read_deps(dep)
         adj = anal_cluster_deps(m, d)
         write_cluster_json(name + ".json", cnt, adj)
