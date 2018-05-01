@@ -13,7 +13,7 @@ app.post('/github/push', function (req, res) {
 });
 
 app.get('/force/:input', function (req, res) {
-
+    res.sendFile(path.join(__dirname, 'public', 'ImpressiveACDC', 'visualization.html'));
 });
 
 app.get('/consistent/:input', function (req, res) {

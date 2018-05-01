@@ -70,8 +70,15 @@ $(function () {
     }
   }
 
+var jsonFile = window.location.pathname.split('/').pop();
+ if (jsonFile.split('.').pop() !== "json") {
+    jsonFile = "Mygraph.json"
+}
+else {
+    jsonFile = "/ImpressiveACDC/input/" + jsonFile;
+}
 
-d3.json("Mygraph.json", function(error, graph) {
+d3.json(jsonFile, function(error, graph) {
  
   links=graph.links;
   nodes=graph.nodes;
