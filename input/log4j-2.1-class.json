@@ -1,0 +1,4872 @@
+{
+  "org.apache.log4j.ss": [
+    {
+      "name": "org.apache.log4j.MDC$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.log4j.MDC",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.log4j.Appender",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.log4j.spi.Filter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.log4j.spi.ErrorHandler",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.log4j.spi.LoggingEvent",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.log4j.Layout",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.log4j.PatternLayout",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.log4j.Logger",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.log4j.Logger$PrivateManager",
+      "type": null
+    },
+    {
+      "name": "org.apache.log4j.LogManager",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.log4j.LogManager$Repository",
+      "type": null
+    },
+    {
+      "name": "org.apache.log4j.LogManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.log4j.LogManager$PrivateManager",
+      "type": null
+    },
+    {
+      "name": "org.apache.log4j.spi.RepositorySelector",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.log4j.spi.LoggerFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.log4j.Level",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.log4j.Priority",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.log4j.helpers.NullEnumeration",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.LoggerContext",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.log4j.spi.LoggerRepository",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.log4j.spi.HierarchyEventListener",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.log4j.BasicConfigurator",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.log4j.PropertyConfigurator",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.LogManager",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.log4j.Category",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.log4j.Category$PrivateFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.log4j.Category$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.log4j.Category$PrivateManager",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ObjectMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.LocalizedMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.FormattedMessage",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.log4j.core.appender.db.jdbc.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSource",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$Column",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$JdbcDatabaseManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.PatternLayout",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.ColumnConfig",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.PatternLayout$Builder",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.ConnectionSource",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.PatternLayout$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.RegexReplacement",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.web.appender.ServletAppender",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.core.filter.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.filter.RegexFilter$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.RegexFilter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.BurstFilter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.BurstFilter$LogDelay",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.BurstFilter$Builder",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.BurstFilter$1",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.perf.jmh.generated.ss": [
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_NormalState_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_NormalState_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_NormalState_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_NormalState_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.AsyncAppenderLog4j1Benchmark",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.AsyncAppenderLog4j1Benchmark$NormalState",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_NormalState_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_NormalState_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_NormalState_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_NormalState_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.AsyncAppenderLog4j2Benchmark",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.AsyncAppenderLog4j2Benchmark$NormalState",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_NormalState_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_NormalState_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_NormalState_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_NormalState_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncLoggersBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncLoggersBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncLoggersBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncLoggersBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.AsyncLoggersBenchmark",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.DebugDisabledBenchmark",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.FormatterLoggerBenchmark",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.StringFormatterMessageFactory",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.LifeCycle",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.LifeCycle$State",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.AbstractMessageFactory",
+      "type": "networking"
+    },
+    {
+      "name": "org.openjdk.jmh.annotations.Level",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.JmsServer",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.mom.jms.JmsTopicReceiver",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.mom.jms.JmsQueueReceiver",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.JdbcAppenderBenchmark",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppender",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.JpaAppenderBenchmark",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.JpaAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Closer",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppender",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager",
+      "type": "io"
+    },
+    {
+      "name": "org.openjdk.jmh.annotations.TearDown",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.NoSqlAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.Log4jLogEventBenchmark",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_RandomInteger_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_RandomInteger_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_RandomInteger_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_RandomInteger_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.SimpleBenchmark",
+      "type": "graphics"
+    },
+    {
+      "name": "org.openjdk.jmh.annotations.BenchmarkMode",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.annotations.Mode",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.annotations.OutputTimeUnit",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.annotations.Setup",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.annotations.State",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.annotations.Scope",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_BufferState_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_BufferState_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_BufferState_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_BufferState_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.TimeFormatBenchmark",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.TimeFormatBenchmark$BufferState",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.UuidGeneratorBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.UuidGeneratorBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.UuidGeneratorBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.UuidGeneratorBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.UuidGeneratorBenchmark",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.UuidUtil",
+      "type": "networking"
+    },
+    {
+      "name": "org.openjdk.jmh.annotations.Benchmark",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ConfiguratorInitializeBenchmark_initializeLoggerContext",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test12_getClassContextViaSecurityManager",
+      "type": "graphics"
+    },
+    {
+      "name": "org.openjdk.jmh.results.RawResults",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.results.ThroughputResult",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.results.AverageTimeResult",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.util.SampleBuffer",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.results.SampleTimeResult",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.results.SingleShotResult",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.runner.InfraControl",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.infra.ThreadParams",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.results.Result",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.infra.BenchmarkParams",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.infra.IterationParams",
+      "type": null
+    },
+    {
+      "name": "org.openjdk.jmh.results.ResultRole",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_latency",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_latencyBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_throughput",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j1Benchmark_throughputBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_latency",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_latencyBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_throughput",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLog4j2Benchmark_throughputBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_latency",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_latencyBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_throughput",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncAppenderLogbackBenchmark_throughputBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncLoggersBenchmark_latency",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncLoggersBenchmark_latencyBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncLoggersBenchmark_throughput",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.AsyncLoggersBenchmark_throughputBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_baseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_cachedClock",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_coarseCachedClock",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_fixedClock",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_fixedFinalClock",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_oldCachedClock",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_systemClock",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ClocksBenchmark_systemCurrentTimeMillis",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_baseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_log4jClassicDebugStringConcatenation",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_log4jClassicIsDebugEnabled",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_log4jDebugParameterizedString",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_log4jDebugStringConcatenation",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_log4jIsDebugEnabled",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_slf4jDebugParameterizedString",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_slf4jDebugStringConcatenation",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.DebugDisabledBenchmark_slf4jIsDebugEnabled",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_latencyBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_latencyParameterizedDouble",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_latencyParameterizedString",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_latencyStringFormatDouble",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_latencyStringFormatString",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_throughputBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_throughputParameterizedDouble",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_throughputParameterizedString",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_throughputStringFormatDouble",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.FormatterLoggerBenchmark_throughputStringFormatString",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_testResponseTimeH2Exception",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_testResponseTimeH2Message",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_testResponseTimeHSQLDBException",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_testResponseTimeHSQLDBMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_testThroughputH2Exception",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_testThroughputH2Message",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_testThroughputHSQLDBException",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JdbcAppenderBenchmark_testThroughputHSQLDBMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_testResponseTimeH2Exception",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_testResponseTimeH2Message",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_testResponseTimeHSQLDBException",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_testResponseTimeHSQLDBMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_testThroughputH2Exception",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_testThroughputH2Message",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_testThroughputHSQLDBException",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.JpaAppenderBenchmark_testThroughputHSQLDBMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_createLogEventWithExceptionUsingBuilder",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_createLogEventWithoutException",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_createLogEventWithoutExceptionUsingBuilder",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_createSerializableLogEventProxyWithException",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_createSerializableLogEventProxyWithoutException",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_getSourceLocationOfLogEvent",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.Log4jLogEventBenchmark_testBaseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_baseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test01_getCallerClassNameFromStackTrace",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test02_getCallerClassNameFromThreadStackTrace",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test03_getCallerClassNameReflectively",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test04_getCallerClassNameSunReflection",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test05_getStackTraceClassForClassName",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test06_getThreadStackTraceClassForClassName",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test07_getReflectiveCallerClassUtility",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test08_getDirectSunReflection",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test09_getMessageUsingNew",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test10_getMessageUsingReflection",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_test11_getClassContextViaCallerClass",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_testBaselineResponseTime",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_testBaselineThroughput",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_testDebugDisabledResponseTime",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_testDebugDisabledThroughput",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_testIsDebugEnabledResponseTime",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_testIsDebugEnabledThroughput",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_testIsEnabledLevelResponseTime",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.SimpleBenchmark_testIsEnabledLevelThroughput",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_baseline",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_customFastFormatBytes",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_customFastFormatString",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_customFormatBytes",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_customFormatString",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_simpleDateFormatBytes",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.TimeFormatBenchmark_simpleDateFormatString",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.UuidGeneratorBenchmark_base",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.UuidGeneratorBenchmark_randomUUID",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.UuidGeneratorBenchmark_timeBasedUUID",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ConfiguratorInitializeBenchmark_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ConfiguratorInitializeBenchmark_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ConfiguratorInitializeBenchmark_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ConfiguratorInitializeBenchmark_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.ConfiguratorInitializeBenchmark",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_ClassContextManager_jmh",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_ClassContextManager_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_ClassContextManager_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.generated.ReflectionBenchmark_ClassContextManager_jmh_B1",
+      "type": "graphics"
+    }
+  ],
+  "org.openjdk.jmh.infra.generated.ss": [
+    {
+      "name": "org.openjdk.jmh.infra.generated.Blackhole_jmh",
+      "type": "no_match"
+    },
+    {
+      "name": "org.openjdk.jmh.infra.generated.Blackhole_jmh_B3",
+      "type": "graphics"
+    },
+    {
+      "name": "org.openjdk.jmh.infra.generated.Blackhole_jmh_B2",
+      "type": "graphics"
+    },
+    {
+      "name": "org.openjdk.jmh.infra.generated.Blackhole_jmh_B1",
+      "type": "graphics"
+    },
+    {
+      "name": "org.openjdk.jmh.infra.Blackhole",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.core.config.plugins.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginElement",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.visitors.PluginElementVisitor",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginAttribute",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.visitors.PluginAttributeVisitor",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginConfiguration",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.visitors.PluginConfigurationVisitor",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginBuilderAttribute",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.visitors.PluginBuilderAttributeVisitor",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginNode",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.visitors.PluginNodeVisitor",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginValue",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.visitors.PluginValueVisitor",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.visitors.AbstractPluginVisitor",
+      "type": "networking"
+    }
+  ],
+  "org.apache.logging.log4j.core.config.plugins.validation.constraints.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.validation.constraints.Required",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.validation.validators.RequiredValidator",
+      "type": "sql"
+    }
+  ],
+  "org.apache.logging.log4j.core.appender.rewrite.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicy$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicy",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicy$Mode",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.core.util.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.util.CachedClock",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.CachedClock$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.CoarseCachedClock",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.CoarseCachedClock$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.KeyValuePair",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.KeyValuePair$Builder",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginBuilderFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Builder",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry$1",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.flume.appender.ss": [
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeAppender$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeAppender",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeAppender$ManagerType",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeEventFactory",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Integers",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.LoggerFields",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeEvent",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.Log4jEventSource",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.flume.instrumentation.SourceCounter",
+      "type": null
+    },
+    {
+      "name": "org.apache.flume.ChannelException",
+      "type": null
+    },
+    {
+      "name": "org.apache.flume.source.AbstractSource",
+      "type": null
+    },
+    {
+      "name": "org.apache.flume.EventDrivenSource",
+      "type": null
+    },
+    {
+      "name": "org.apache.flume.channel.ChannelProcessor",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeAvroManager",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeAvroManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeAvroManager$AvroManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeAvroManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.flume.api.RpcClient",
+      "type": null
+    },
+    {
+      "name": "org.apache.flume.api.RpcClientFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedManager",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.flume.EventDeliveryException",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedManager$FlumeManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.flume.agent.embedded.EmbeddedAgent",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.ConfigurationException",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.AbstractFlumeManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.flume.Event",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.Agent",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumePersistentManager",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumePersistentManager$Gate",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumePersistentManager$DaemonThreadFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumePersistentManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumePersistentManager$BDBWriter",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.StatsConfig",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumePersistentManager$1",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.Database",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.Environment",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.DatabaseStats",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.DatabaseEntry",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.LockConflictException",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.OperationStatus",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.Transaction",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.TransactionConfig",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.AbstractManager",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumePersistentManager$WriterThread",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.Cursor",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.LockMode",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.CursorConfig",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.BatchEvent",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.flume.event.SimpleEvent",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.flume.appender.FlumePersistentManager$BDBManagerFactory",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.EnvironmentConfig",
+      "type": null
+    },
+    {
+      "name": "com.sleepycat.je.DatabaseConfig",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.SecretKeyProvider",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.util.PluginManager",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.message.ss": [
+    {
+      "name": "org.apache.logging.log4j.message.ExtendedThreadInformation",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ExtendedThreadInformation$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.StructuredDataMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.StructuredDataMessage$Format",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.util.EnglishEnums",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.MapMessage",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.MapMessage$MapFormat",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.MapMessage$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.MultiformatMessage",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ThreadDumpMessage",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ThreadDumpMessage$ThreadDumpMessageProxy",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ThreadDumpMessage$ExtendedThreadInfoFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ThreadDumpMessage$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ThreadDumpMessage$ThreadInfoFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ThreadInformation",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ThreadDumpMessage$BasicThreadInfoFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.BasicThreadInformation",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.slf4j.ss": [
+    {
+      "name": "org.apache.logging.slf4j.MDCContextMap",
+      "type": "io"
+    },
+    {
+      "name": "org.slf4j.MDC",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.ThreadContextMap",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.slf4j.SLF4JLoggerContextFactory",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.slf4j.SLF4JLoggerContext",
+      "type": "io"
+    },
+    {
+      "name": "org.slf4j.Logger",
+      "type": null
+    },
+    {
+      "name": "org.slf4j.LoggerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.slf4j.SLF4JLogger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.slf4j.SLF4JLogger$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.StandardLevel",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.LoggerNameAwareMessage",
+      "type": "io"
+    },
+    {
+      "name": "org.slf4j.spi.LocationAwareLogger",
+      "type": null
+    },
+    {
+      "name": "org.slf4j.MarkerFactory",
+      "type": null
+    }
+  ],
+  "org.slf4j.impl.ss": [
+    {
+      "name": "org.slf4j.impl.StaticMDCBinder",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.slf4j.Log4jMDCAdapter",
+      "type": "no_match"
+    },
+    {
+      "name": "org.slf4j.spi.MDCAdapter",
+      "type": null
+    },
+    {
+      "name": "org.slf4j.impl.StaticLoggerBinder",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.slf4j.Log4jLoggerFactory",
+      "type": "io"
+    },
+    {
+      "name": "org.slf4j.spi.LoggerFactoryBinder",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.slf4j.Log4jLogger",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.slf4j.Log4jMarker",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.slf4j.Log4jMarkerFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.slf4j.EventDataConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.slf4j.IMarkerFactory",
+      "type": null
+    },
+    {
+      "name": "org.slf4j.ext.EventData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.MarkerManager",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.MarkerManager$Log4jMarker",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ParameterizedMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.SimpleMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.AbstractLoggerAdapter",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.LoggerAdapter",
+      "type": "io"
+    },
+    {
+      "name": "org.slf4j.ILoggerFactory",
+      "type": null
+    },
+    {
+      "name": "org.slf4j.Marker",
+      "type": null
+    },
+    {
+      "name": "org.slf4j.impl.StaticMarkerBinder",
+      "type": "io"
+    },
+    {
+      "name": "org.slf4j.spi.MarkerFactoryBinder",
+      "type": null
+    }
+  ],
+  "org.apache.log4j.xml.ss": [
+    {
+      "name": "org.apache.log4j.xml.DOMConfigurator",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.log4j.spi.ss": [
+    {
+      "name": "org.apache.logging.log4j.spi.DefaultThreadContextMap",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.DefaultThreadContextMap$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.AbstractLogger",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.ParameterizedMessageFactory",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.StringFormattedMessage",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.log4j.core.net.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.net.Severity",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.Severity$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.JndiManager",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.JndiManager$JndiManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.JndiManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.JndiCloser",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.DatagramSocketManager",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.DatagramSocketManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.DatagramSocketManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SmtpManager$SMTPManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SmtpManager$SMTPManagerFactory$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.MimeMessageBuilder",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SslSocketManager$SslSocketManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SslSocketManager$SslSocketManagerFactory$TlsSocketManagerFactoryException",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SslSocketManager",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SslSocketManager$SslFactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SslSocketManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.TcpSocketManager",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.TcpSocketManager$Reconnector",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.TcpSocketManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.TcpSocketManager$TcpSocketManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.AbstractSocketManager",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SmtpManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.CyclicBuffer",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SmtpManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.SmtpManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.DatagramSocketManager$DatagramSocketManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.DatagramOutputStream",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.log4j.jmx.gui.ss": [
+    {
+      "name": "org.apache.logging.log4j.jmx.gui.ClientEditConfigPanel",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.jmx.gui.ClientEditConfigPanel$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.jmx.gui.ClientEditConfigPanel$2",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.LoggerContextAdminMBean",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.jmx.gui.ClientGuiJConsolePlugin",
+      "type": "sql"
+    },
+    {
+      "name": "com.sun.tools.jconsole.JConsolePlugin",
+      "type": null
+    },
+    {
+      "name": "com.sun.tools.jconsole.JConsoleContext",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.jmx.gui.ClientGui",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.jmx.gui.ClientGui$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.jmx.gui.ClientGui$2",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.jmx.gui.ClientGui$3",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.jmx.gui.Client",
+      "type": "networking"
+    }
+  ],
+  "org.apache.logging.log4j.perf.jmh.ss": [
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.ClocksBenchmark$OldCachedClock",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.ClocksBenchmark$OldCachedClock$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.ReflectionBenchmark",
+      "type": "networking"
+    },
+    {
+      "name": "sun.reflect.Reflection",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.ReflectionBenchmark$ClassContextManager",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.ReflectionBenchmark$RandomInteger",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.AsyncAppenderLogbackBenchmark$NormalState",
+      "type": null
+    },
+    {
+      "name": "ch.qos.logback.core.spi.LifeCycle",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.AsyncAppenderLogbackBenchmark",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.ClocksBenchmark",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.ClocksBenchmark$FixedTimeClock",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.ClocksBenchmark$FixedFinalTimeClock",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Clock",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.SystemClock",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.perf.jmh.jpa.ss": [
+    {
+      "name": "org.apache.logging.log4j.perf.jmh.jpa.TestBasicEntity",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.BasicLogEventEntity",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.LevelAttributeConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.StackTraceElementAttributeConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.MessageAttributeConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.MarkerAttributeConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.ThrowableAttributeConverter",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapAttributeConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackAttributeConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.util.Strings",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.log4j.util.ss": [
+    {
+      "name": "org.apache.logging.log4j.util.LoaderUtil",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.util.LoaderUtil$ThreadContextClassLoaderGetter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.util.LoaderUtil$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.util.LoaderUtil$UrlResource",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.util.ReflectionUtil",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.util.ReflectionUtil$PrivateSecurityManager",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.util.Activator",
+      "type": "networking"
+    },
+    {
+      "name": "org.osgi.framework.AdminPermission",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.AdaptPermission",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.wiring.BundleWire",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.wiring.BundleWiring",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.Bundle",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.BundleActivator",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.SynchronousBundleListener",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.BundleContext",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.BundleEvent",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.BundleListener",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.core.appender.db.jpa.converter.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapJsonAttributeConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapJsonAttributeConverter$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackJsonAttributeConverter$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackJsonAttributeConverter",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.core.config.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.FileConfigurationMonitor",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.FileConfigurationMonitor$ReconfigurationWorker",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.ConfigurationListener",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.Reconfigurable",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.ConfigurationFactory",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.ConfigurationFactory$Factory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.ConfigurationFactory$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.OrderComparator",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.util.PropertiesUtil",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.DefaultConfiguration",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.ConfigurationSource",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.FileUtils",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.json.JsonConfigurationFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.LoggerConfig",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.LogEventFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.DefaultLogEventFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.LoggerConfig$RootLogger",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.Message",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.AppenderRef",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Booleans",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.Property",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerContextSelector",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rewrite.RewriteAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.FormattedMessageFactory",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.LocalizedMessageFactory",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.AbstractConfiguration",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.DefaultConfigurationMonitor",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.DefaultAdvertiser",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.CustomLevels",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.ConfigurationMonitor",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.Advertiser",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.Loggers",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.CustomLevelConfig",
+      "type": "no_match"
+    }
+  ],
+  "org.apache.logging.log4j.core.pattern.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.pattern.NameAbbreviator",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.NameAbbreviator$MaxElementAbbreviator",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.NameAbbreviator$PatternAbbreviatorFragment",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.NameAbbreviator$PatternAbbreviator",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.NameAbbreviator$NOPAbbreviator",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.DatePatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.DatePatternConverter$UnixFormatter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.DatePatternConverter$UnixMillisFormatter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.DatePatternConverter$PatternFormatter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.DatePatternConverter$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.DatePatternConverter$Formatter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.FileDatePatternConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.PatternParser",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.PatternParser$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.PatternParser$ParserState",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.ExtendedThrowablePatternConverter",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Constants",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.FormattingInfo",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.PatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.ThrowableFormatOptions",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.ThrowablePatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AnsiConverter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.CachedDateFormat",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.RootThrowablePatternConverter",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Yellow",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$White",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Red",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Magenta",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Green",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Cyan",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Blue",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter$Black",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.Configuration",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.PatternFormatter",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.LogEventPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AbstractPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.AnsiEscape",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.ConverterKeys",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.ClassNamePatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.NamePatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.EncodingPatternConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.FileLocationPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.FullLocationPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.HighlightConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.IntegerPatternConverter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.LevelPatternConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.LineLocationPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.LineSeparatorPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.LoggerPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.MapPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.MarkerPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.MdcPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.MessagePatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.MethodLocationPatternConverter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.RegexReplacementConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.RelativeTimePatternConverter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.SequenceNumberPatternConverter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.StyleConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.ThreadPatternConverter",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.UuidPatternConverter",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.LiteralPatternConverter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.OptionConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.ArrayPatternConverter",
+      "type": "sql"
+    }
+  ],
+  "org.apache.logging.log4j.core.tools.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.tools.Generate$Type",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.tools.Generate$Type$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.tools.Generate$Type$2",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.tools.Generate$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.tools.Generate$ExtendedLogger",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.tools.Generate$CustomLogger",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.tools.Generate",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.tools.Generate$LevelInfo",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.samples.app.ss": [
+    {
+      "name": "org.apache.logging.log4j.samples.app.LogEventFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.app.LogEventFactory$AuditProxy",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.util.NamingUtils",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.EventLogger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.StructuredDataId",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.app.LoggingApp$Worker",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.app.LoggingApp",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.dto.RequestContext",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.app.MockEventsSupplier",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.events.Login",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.events.ChangePassword",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.events.Transfer",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.events.Alert",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.events.ScheduledTransaction",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.dto.AuditEvent",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.dto.Constraint",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.app.LoggingController$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.samples.app.LoggingController",
+      "type": "io"
+    },
+    {
+      "name": "org.springframework.web.servlet.ModelAndView",
+      "type": null
+    },
+    {
+      "name": "org.springframework.web.bind.annotation.RequestMapping",
+      "type": null
+    },
+    {
+      "name": "org.springframework.web.bind.annotation.RequestMethod",
+      "type": null
+    },
+    {
+      "name": "org.springframework.web.bind.annotation.RequestParam",
+      "type": null
+    },
+    {
+      "name": "org.springframework.stereotype.Controller",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.core.jackson.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.jackson.Log4jJsonObjectMapper",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.Log4jJsonModule",
+      "type": "sql"
+    },
+    {
+      "name": "com.fasterxml.jackson.core.Version",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.Module",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.Log4jStackTraceElementDeserializer",
+      "type": "io"
+    },
+    {
+      "name": "com.fasterxml.jackson.core.JsonToken",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.JsonMappingException",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.Log4jXmlObjectMapper",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.Log4jXmlModule",
+      "type": "sql"
+    },
+    {
+      "name": "com.fasterxml.jackson.dataformat.xml.XmlMapper",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.dataformat.xml.JacksonXmlModule",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.Module$SetupContext",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonInclude$Include",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonInclude",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.Initializers$SimpleModuleInitializer",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.JsonDeserializer",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.Initializers",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.MutableThreadContextStackDeserializer",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.MutableThreadContextStackDeserializer$1",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.core.type.TypeReference",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.core.JsonParser",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.deser.std.StdDeserializer",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.DeserializationContext",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.MutableThreadContextStack",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.ListOfMapEntryDeserializer",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.ListOfMapEntryDeserializer$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.MapEntry",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.Initializers$SetupContextInitializer",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.StackTraceElementMixIn",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.MarkerMixIn",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.ExtendedStackTraceElementMixIn",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.ThrowableProxyMixIn",
+      "type": "io"
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonIgnoreProperties",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.annotation.JsonDeserialize",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonIgnore",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.ExtendedStackTraceElement",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.ExtendedClassInfo",
+      "type": "graphics"
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonCreator",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonProperty",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.LevelMixIn",
+      "type": "networking"
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonValue",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.LogEventMixIn",
+      "type": "graphics"
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.annotation.JsonSerialize",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.SimpleMessageDeserializer",
+      "type": "io"
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonRootName",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonFilter",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.core.JsonGenerator",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.SerializerProvider",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.core.JsonGenerationException",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.annotation.JsonPropertyOrder",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.core.JsonProcessingException",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.deser.std.StdScalarDeserializer",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.ListOfMapEntrySerializer",
+      "type": "sql"
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.ser.std.StdSerializer",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.MessageSerializer",
+      "type": "io"
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.ser.std.StdScalarSerializer",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.core.layout.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.layout.GelfLayout$CompressionType",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.GelfLayout$CompressionType$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.GelfLayout$CompressionType$2",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.GelfLayout$CompressionType$3",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.GelfLayout$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.GelfLayout",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.JsonLayout",
+      "type": "sql"
+    },
+    {
+      "name": "com.fasterxml.jackson.core.io.JsonStringEncoder",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Charsets",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.AbstractJacksonLayout",
+      "type": "io"
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.ObjectWriter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.XmlLayout",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.SerializedLayout",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.SerializedLayout$PrivateObjectOutputStream",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.AbstractLayout",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.JacksonFactory$XML",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.core.PrettyPrinter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.XmlConstants",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.JacksonFactory$JSON",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jackson.JsonConstants",
+      "type": "io"
+    },
+    {
+      "name": "com.fasterxml.jackson.core.util.MinimalPrettyPrinter",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.JacksonFactory",
+      "type": "io"
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.ser.FilterProvider",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.HtmlLayout",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.HtmlLayout$Builder",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.HtmlLayout$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.HtmlLayout$FontSize",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Transform",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.Rfc5424Layout",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.Rfc5424Layout$NoopChecker",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.Rfc5424Layout$ExcludeChecker",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.Rfc5424Layout$IncludeChecker",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.Rfc5424Layout$FieldFormatter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.TlsSyslogFrame",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.Rfc5424Layout$StructuredDataElement",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.Rfc5424Layout$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.Rfc5424Layout$ListChecker",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Patterns",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.core.net.server.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.net.server.AbstractSocketServer$ServerConfigurationFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.xml.XmlConfigurationFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.InputStreamLogEventBridge",
+      "type": "io"
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.ObjectReader",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.ObjectMapper",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.AbstractLogEventBridge",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.TcpSocketServer",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.TcpSocketServer$SocketHandler",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.LogEventListener",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.LogEventBridge",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.AbstractSocketServer",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.JsonInputStreamLogEventBridge",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.ObjectInputStreamLogEventBridge",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.XmlInputStreamLogEventBridge",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.SecureTcpSocketServer",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.server.UdpSocketServer",
+      "type": "networking"
+    }
+  ],
+  "org.apache.logging.log4j.io.ss": [
+    {
+      "name": "org.apache.logging.log4j.io.ByteStreamLogger",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.ByteStreamLogger$ByteBufferInputStream",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.io.ByteStreamLogger$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.io.IoBuilder",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerBufferedReader",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerReader",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerWriter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerFilterWriter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerPrintWriter",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerBufferedInputStream",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerInputStream",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerOutputStream",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerFilterOutputStream",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.LoggerPrintStream",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.io.CharStreamLogger",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.Level",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.Marker",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.ExtendedLogger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.LoggingException",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.FailoverAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.DynamicThresholdFilter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.MapFilter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.MarkerFilter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.StructuredDataFilter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.ThreadContextMapFilter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.CatchingTag",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.Log4jTaglibLogger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.TagUtils",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.DebugTag",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.LoggingMessageTagSupport",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.DumpTag",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.EntryTag",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.LoggerAwareTagSupport",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.ErrorTag",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.ExitTag",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.FatalTag",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.IfEnabledTag",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.InfoTag",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.Log4jTaglibLoggerContext",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.LogTag",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.SetLoggerTag",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.TraceTag",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.WarnTag",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.taglib.ExceptionAwareTagSupport",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.jcl.ss": [
+    {
+      "name": "org.apache.logging.log4j.jcl.LogFactoryImpl",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.jcl.LogAdapter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.commons.logging.LogFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.commons.logging.LogConfigurationException",
+      "type": null
+    },
+    {
+      "name": "org.apache.commons.logging.Log",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.jcl.Log4jLog",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.log4j.core.async.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLogger$ThreadNameStrategy",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLogger$ThreadNameStrategy$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLogger$ThreadNameStrategy$2",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLogger$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLogger$Info",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.RingBufferLogEventTranslator",
+      "type": "networking"
+    },
+    {
+      "name": "com.lmax.disruptor.EventTranslator",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerConfig",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerConfig$RootLogger",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerConfigHelper",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerConfigHelper$2",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerConfigHelper$Log4jEventWrapperHandler",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerConfigHelper$3",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerConfigHelper$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerConfigHelper$Log4jEventWrapper",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.EventTranslatorTwoArg",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.SleepingWaitStrategy",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.YieldingWaitStrategy",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.BlockingWaitStrategy",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.ExceptionHandler",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.DaemonThreadFactory",
+      "type": "io"
+    },
+    {
+      "name": "com.lmax.disruptor.dsl.Disruptor",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.EventHandler",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.WaitStrategy",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.RingBuffer",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.dsl.ProducerType",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.dsl.EventHandlerGroup",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLogger",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.RingBufferLogEventHandler",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.RingBufferLogEvent",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.RingBufferLogEvent$Factory",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.EventFactory",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.SequenceReportingEventHandler",
+      "type": null
+    },
+    {
+      "name": "com.lmax.disruptor.Sequence",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.RingBufferLogEvent$1",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.core.config.status.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.status.StatusConfiguration",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.status.StatusConsoleListener",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.status.StatusConfiguration$Verbosity",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.status.StatusListener",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.status.StatusData",
+      "type": "networking"
+    }
+  ],
+  "org.apache.logging.log4j.core.lookup.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.lookup.StrMatcher",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.StrMatcher$CharMatcher",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.StrMatcher$CharSetMatcher",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.StrMatcher$StringMatcher",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.StrMatcher$TrimMatcher",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.StrMatcher$NoMatcher",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.Interpolator",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.SystemPropertiesLookup",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.EnvironmentLookup",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.JavaLookup",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.DateLookup",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.ContextMapLookup",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.LogEvent",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.StrLookup",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.MapLookup",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.AbstractLookup",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.PropertiesPlugin",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.JndiLookup",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.ResourceBundleLookup",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.StructuredDataLookup",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.web.WebLookup",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.core.appender.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.appender.FileManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.FileManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.FileManager$FileManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.FileManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.AbstractAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.DefaultErrorHandler",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.MemoryMappedFileManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.MemoryMappedFileManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.MemoryMappedFileManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.MemoryMappedFileManager$MemoryMappedFileManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.MemoryMappedFileManager$DummyOutputStream",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.RandomAccessFileManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.RandomAccessFileManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.RandomAccessFileManager$RandomAccessFileManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.RandomAccessFileManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.RandomAccessFileManager$DummyOutputStream",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.SmtpAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.ThresholdFilter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.Filter$Result",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.AbstractFilter",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.TimeFilter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.AsyncAppender",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.AsyncAppender$AsyncThread",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.AppenderControl",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.ConsoleAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.ConsoleAppender$Builder",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.ConsoleAppender$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.ConsoleAppender$SystemOutStream",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.ConsoleAppender$SystemErrStream",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.ConsoleAppender$ConsoleManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.ConsoleAppender$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.ConsoleAppender$Target",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.Layout",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.OutputStreamManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.FileAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.MemoryMappedFileAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.RandomAccessFileAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.RollingFileAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.SyslogAppender",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.SyslogLayout",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.Facility",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.layout.AbstractStringLayout",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.Priority",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.SocketAppender",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.SocketAppender$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.Protocol",
+      "type": "networking"
+    }
+  ],
+  "org.apache.logging.log4j.core.appender.mom.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.appender.mom.JmsManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.mom.JmsManager$JmsConfiguration",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.mom.JmsManager$JmsManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.mom.JmsManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.mom.JmsAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.mom.JmsAppender$Builder",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.mom.JmsAppender$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginAliases",
+      "type": "networking"
+    }
+  ],
+  "org.apache.logging.log4j.core.config.plugins.processor.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor$PluginElementVisitor",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor$PluginAliasesElementVisitor",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.processor.PluginEntry",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.log4j.jul.ss": [
+    {
+      "name": "org.apache.logging.log4j.jul.ApiLogger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.WrappedLogger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.MessageFactory",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.ExtendedLoggerWrapper",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.ApiLoggerAdapter",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.CoreLoggerAdapter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.CoreLogger",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.Logger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.Logger$PrivateConfig",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.CompositeFilter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.AbstractLoggerAdapter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.MessageFormatMessageFactory",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.message.MessageFormatMessage",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.LevelTranslator",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.LevelConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.DefaultLevelConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.jul.Constants",
+      "type": "sql"
+    }
+  ],
+  "org.apache.logging.log4j.web.ss": [
+    {
+      "name": "org.apache.logging.log4j.web.Log4jServletContainerInitializer",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.web.Log4jServletFilter",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.web.Log4jServletContextListener",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.web.WebLoggerContextUtils",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.web.WebLoggerContextUtils$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.web.Log4jWebInitializerImpl",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.SetUtils",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.NetUtils",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Loader",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.Configurator",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.ContextAnchor",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.selector.NamedContextSelector",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.web.Log4jWebSupport",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.web.Log4jWebLifeCycle",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.selector.BasicContextSelector",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.selector.JndiContextSelector",
+      "type": "networking"
+    }
+  ],
+  "org.apache.logging.log4j.core.impl.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.impl.ThrowableProxy",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.ThrowableProxy$CacheEntry",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.Log4jLogEvent",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.Log4jLogEvent$LogEventProxy",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.Log4jLogEvent$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.message.TimestampMessage",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.ClockFactory",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.Log4jLogEvent$Builder",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.core.appender.db.jpa.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$JPADatabaseManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity$NullLogEvent",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.AbstractLogEvent",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.log4j.core.config.yaml.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.yaml.YamlConfigurationFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.Order",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.yaml.YamlConfiguration",
+      "type": "sql"
+    },
+    {
+      "name": "com.fasterxml.jackson.dataformat.yaml.YAMLFactory",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.core.JsonFactory",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.core.JsonParser$Feature",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.core.net.ssl.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.net.ssl.SslConfiguration",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.ssl.TrustStoreConfigurationException",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.ssl.KeyStoreConfigurationException",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.ssl.KeyStoreConfiguration",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.ssl.TrustStoreConfiguration",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.ssl.SslConfigurationDefaults",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.ssl.StoreConfigurationException",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.ssl.AbstractKeyStoreConfiguration",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.ssl.StoreConfiguration",
+      "type": "graphics"
+    }
+  ],
+  "org.apache.logging.log4j.status.ss": [
+    {
+      "name": "org.apache.logging.log4j.status.StatusLogger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.status.StatusLogger$BoundedQueue",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.simple.SimpleLogger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.simple.SimpleLoggerContext",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.FailoversPlugin",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.jdbc.DataSourceConnectionSource",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.AbstractRolloverStrategy",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.net.MulticastDnsAdvertiser",
+      "type": "sql"
+    }
+  ],
+  "org.apache.logging.log4j.core.appender.rolling.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager$RollingRandomAccessFileManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager$DummyOutputStream",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.PatternProcessor",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RolloverFrequency",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingFileManager",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingFileManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingFileManager$AsyncAction",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingFileManager$RollingFileManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RollingFileManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.TriggeringPolicy",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RolloverStrategy",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.OnStartupTriggeringPolicy",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.TimeBasedTriggeringPolicy",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.action.FileRenameAction",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.action.GzCompressAction",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.action.ZipCompressAction",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RolloverDescriptionImpl",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.Logger",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.action.Action",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.RolloverDescription",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.action.AbstractAction",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rolling.action.CompositeAction",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.core.config.plugins.util.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.util.PluginRegistry",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.util.PluginRegistry$PluginTest",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.util.ResolverUtil",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.processor.PluginCache",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.util.ResolverUtil$Test",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.util.PluginBuilder",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.visitors.PluginVisitors",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.validation.ConstraintValidators",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.ReflectionUtil",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.PluginVisitorStrategy",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.visitors.PluginVisitor",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.TypeUtil",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.validation.ConstraintValidator",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.validation.Constraint",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Throwables",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.core.osgi.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.osgi.Activator",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.osgi.BundleContextSelector",
+      "type": "sql"
+    },
+    {
+      "name": "org.osgi.framework.BundleReference",
+      "type": null
+    },
+    {
+      "name": "org.osgi.framework.FrameworkUtil",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.ss": [
+    {
+      "name": "org.apache.logging.log4j.LogManager",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.simple.SimpleLoggerContextFactory",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.LoggerContextFactory",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.Provider",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.util.ProviderUtil",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.ThreadContext",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.ThreadContext$EmptyThreadContextStack",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.ThreadContext$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.ThreadContext$EmptyIterator",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.ThreadContext$ContextStack",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.DefaultThreadContextStack",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.spi.ThreadContextStack",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.log4j.NDC",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rewrite.PropertiesRewritePolicy",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.pattern.NdcPatternConverter",
+      "type": "sql"
+    }
+  ],
+  "org.apache.logging.log4j.nosql.appender.couchdb.ss": [
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.couchdb.CouchDbProvider",
+      "type": "networking"
+    },
+    {
+      "name": "org.lightcouch.CouchDbClient",
+      "type": null
+    },
+    {
+      "name": "org.lightcouch.CouchDbProperties",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.couchdb.CouchDbConnection",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.DefaultNoSqlObject",
+      "type": "networking"
+    },
+    {
+      "name": "org.lightcouch.Response",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.NoSqlObject",
+      "type": "sql"
+    }
+  ],
+  "org.apache.logging.log4j.nosql.appender.mongodb.ss": [
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.mongodb.MongoDbProvider",
+      "type": "networking"
+    },
+    {
+      "name": "com.mongodb.MongoClient",
+      "type": null
+    },
+    {
+      "name": "com.mongodb.ServerAddress",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.NameUtil",
+      "type": "io"
+    },
+    {
+      "name": "com.mongodb.Mongo",
+      "type": null
+    },
+    {
+      "name": "com.mongodb.WriteConcern",
+      "type": null
+    },
+    {
+      "name": "com.mongodb.DB",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.mongodb.MongoDbConnection",
+      "type": "sql"
+    },
+    {
+      "name": "com.mongodb.DBObject",
+      "type": null
+    },
+    {
+      "name": "com.mongodb.MongoException",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.mongodb.MongoDbConnection$1",
+      "type": null
+    },
+    {
+      "name": "com.mongodb.DBCollection",
+      "type": null
+    },
+    {
+      "name": "com.mongodb.WriteResult",
+      "type": null
+    },
+    {
+      "name": "com.mongodb.BasicDBObject",
+      "type": null
+    },
+    {
+      "name": "com.mongodb.DBTCPConnector",
+      "type": null
+    },
+    {
+      "name": "org.bson.BSON",
+      "type": null
+    },
+    {
+      "name": "org.bson.Transformer",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.AppenderLoggingException",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.mongodb.MongoDbObject",
+      "type": "graphics"
+    },
+    {
+      "name": "com.mongodb.BasicDBList",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.nosql.appender.ss": [
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.NoSqlDatabaseManager",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.NoSqlDatabaseManager$FactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.NoSqlDatabaseManager$NoSQLDatabaseManagerFactory",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.NoSqlDatabaseManager$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.ManagerFactory",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager$AbstractFactoryData",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.NoSqlProvider",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.nosql.appender.NoSqlConnection",
+      "type": "sql"
+    }
+  ],
+  "org.apache.logging.log4j.core.appender.routing.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.appender.routing.RoutingAppender",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.routing.Routes",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.routing.Route",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.appender.rewrite.RewritePolicy",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.Node",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.util.PluginType",
+      "type": "io"
+    }
+  ],
+  "org.apache.logging.log4j.core.config.json.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.json.JsonConfiguration",
+      "type": "sql"
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.JsonNode",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.json.JsonConfiguration$Status",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.json.JsonConfiguration$ErrorType",
+      "type": null
+    },
+    {
+      "name": "com.fasterxml.jackson.databind.node.JsonNodeType",
+      "type": null
+    }
+  ],
+  "org.apache.logging.log4j.core.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.LoggerContext",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.LoggerContext$1",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.NullConfiguration",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.AbstractLifeCycle",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.ShutdownCallbackRegistry",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Cancellable",
+      "type": "no_match"
+    }
+  ],
+  "org.apache.logging.log4j.core.config.plugins.convert.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$UrlConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$UriConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$StringConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$ShortConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$SecurityProviderConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$PatternConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$LongConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$LevelConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$IntegerConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$FloatConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$FileConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$DoubleConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$ClassConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$CharsetConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$CharArrayConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$CharacterConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$ByteConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$ByteArrayConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$BooleanConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$BigIntegerConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverters$BigDecimalConverter",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverter",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.Plugin",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.AppendersPlugin",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.LoggersPlugin",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.lookup.JmxRuntimeInputArgumentsLookup",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.TypeConverterRegistry",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.plugins.convert.EnumConverter",
+      "type": "networking"
+    }
+  ],
+  "org.apache.logging.log4j.core.jmx.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.jmx.Server",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.LoggerContextAdmin",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.StatusLoggerAdmin",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.ContextSelectorAdmin",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.ContextSelectorAdminMBean",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.LoggerConfigAdminMBean",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.AppenderAdminMBean",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.AsyncAppenderAdminMBean",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.LoggerConfigAdmin",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.AsyncAppenderAdmin",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.AppenderAdmin",
+      "type": "no_match"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.Appender",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.ErrorHandler",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.Filter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.util.Assert",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.AbstractFilterable",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.RingBufferAdmin",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.async.AsyncLoggerContext",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.selector.ContextSelector",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.impl.Log4jContextFactory",
+      "type": "graphics"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.filter.Filterable",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.selector.ClassLoaderContextSelector",
+      "type": "networking"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.RingBufferAdminMBean",
+      "type": "io"
+    },
+    {
+      "name": "org.apache.logging.log4j.core.jmx.StatusLoggerAdminMBean",
+      "type": "networking"
+    }
+  ],
+  "org.apache.logging.log4j.core.config.xml.ss": [
+    {
+      "name": "org.apache.logging.log4j.core.config.xml.XmlConfiguration",
+      "type": "io"
+    },
+    {
+      "name": "org.xml.sax.InputSource",
+      "type": null
+    },
+    {
+      "name": "org.xml.sax.SAXException",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.xml.XmlConfiguration$Status",
+      "type": null
+    },
+    {
+      "name": "org.w3c.dom.Text",
+      "type": null
+    },
+    {
+      "name": "org.w3c.dom.Attr",
+      "type": null
+    },
+    {
+      "name": "org.apache.logging.log4j.core.config.xml.XmlConfiguration$ErrorType",
+      "type": null
+    },
+    {
+      "name": "org.w3c.dom.Document",
+      "type": null
+    },
+    {
+      "name": "org.w3c.dom.Node",
+      "type": null
+    },
+    {
+      "name": "org.w3c.dom.NodeList",
+      "type": null
+    },
+    {
+      "name": "org.w3c.dom.NamedNodeMap",
+      "type": null
+    },
+    {
+      "name": "org.w3c.dom.Element",
+      "type": null
+    }
+  ],
+  "org.apache.log4j.config.ss": [
+    {
+      "name": "org.apache.log4j.config.PropertySetter",
+      "type": "sql"
+    },
+    {
+      "name": "org.apache.log4j.config.PropertySetterException",
+      "type": "io"
+    }
+  ]
+}
