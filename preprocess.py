@@ -43,6 +43,7 @@ def anal_cluster_deps(membership, deps):
             adjList[classA][classB] /= float(maximum)
     return adjList
 
+# Write json file for cluster view
 def write_cluster_json(fileName, cntClass, adjList):
     data = {}
     data["nodes"] = [{"id": key, "label": key, "level": cntClass[key]} \
@@ -53,6 +54,7 @@ def write_cluster_json(fileName, cntClass, adjList):
     with open(fileName, 'w') as fd:
         fd.write(json.dumps(data, indent=2))
 
+# Write json file for class view
 def write_class_json(fileName, clusters, deps):
     adjList = defaultdict(list)
     for classA, classB in deps:
@@ -60,6 +62,23 @@ def write_class_json(fileName, clusters, deps):
     data = clusters
     with open(fileName, 'w') as fd:
         fd.write(json.dumps(data, indent=2))
+
+# Read ucc output for code complexity information
+def read_ucc_output(fileName):
+    sloc = {}
+    pattern = re.compile("test")
+    with open(fileName, 'r') as fd:
+        for i, line in enumerate(fd):
+            # Maybe not search for test pattern here
+            if i > 10 and not re.search(pattern, line):
+                if len(line) < 10:
+                    break
+                row = line.strip().split(",")
+                objName = re.sub(r'/', r'.', row[-1])
+                objName = re.sub(r'^.*org', r'org', objName)
+                objName = re.sub(r'.java$', r'', objName)
+                sloc[objName] = int(row[7])
+    return sloc
 
 if __name__=="__main__":
     try:
