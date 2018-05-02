@@ -106,7 +106,10 @@ var tooltip = d3.select("body")
             .attr("class", "bubble");
 
         var nodes = d3.hierarchy(dataset)
-            .sum(function(d) { return 20; });
+
+            .sum(function(d) { 
+                if (d.complexity==null) return 2;
+                else return d.complexity; });
             console.log(nodes);
 
         var node = svg.selectAll(".node")
@@ -151,7 +154,7 @@ var tooltip = d3.select("body")
 
             })
             .on("mouseover", function(d) {
-              tooltip.text("Name: " + d.data.name + "    Type: "+ d.data.type);
+              tooltip.text("Name: " + d.data.name + "    Type: "+ d.data.type + "      Complexity: " + d.data.complexity);
               tooltip.style("visibility", "visible");
               })
              .on("mousemove", function() {
