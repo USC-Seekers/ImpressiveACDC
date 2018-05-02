@@ -39,11 +39,13 @@
     var nodes = null;
     var nodesAutoComplete = [];
     var links = null;
+    var axis = null;
     var connected = null;
     var nodeDict = null;
     var d3Nodes = null;
     var d3Links = null;
     var d3Texts = null;
+    var d3Axis = null;
     var connectedToggle = 0;
     var width = 1200;
     var height = 800;
@@ -55,7 +57,7 @@
             if (svg === null) return;
             var searchId = $("#search").val();
 
-            d3Nodes.style("opacity", function(node) {
+            d3Nodes.style("opacity", function (node) {
                 return node.id !== searchId && !neighboring(nodeDict[searchId], node) ? 0.1 : 1;
             });
             d3Links.style("opacity", function (link) {
@@ -70,8 +72,8 @@
     var getNodeSize = function (node) {
         return node.level * 20;
     };
-    var getNodeColor = function (node) {
-        switch (node.type) {
+    var getColor = function (type) {
+        switch (type) {
             case "sql":
                 return colors[0];
             case "graphics":
@@ -180,13 +182,19 @@
     };
 
     var jsonFile = window.location.pathname.split('/').pop();
-    d3.json("/ImpressiveACDC/input/" + jsonFile, function (error, graph) {
+    if (jsonFile.split('.').pop() !== "json") {
+        jsonFile = "consistent.json"
+    }
+    else {
+        jsonFile = "/ImpressiveACDC/input/" + jsonFile;
+    }
+    d3.json(jsonFile, function (error, graph) {
         nodeDict = {};
         var nodes = graph.nodes.map(function (node) {
             node.dx = getNodePositionX(node);
             node.dy = getNodePositionY(node);
             node.radius = getNodeSize(node);
-            node.color = getNodeColor(node);
+            node.color = getColor(node.type);
             nodeDict[node.id] = node;
             nodesAutoComplete.push(node.id);
             return node;
@@ -202,6 +210,11 @@
         nodes.sort(function (a, b) {
             return (a.x * a.x + a.y * a.y) - (b.x * b.x + b.y * b.y);
         });
+        axis = [];
+        for (var type in graph.axis) {
+            if (!graph.axis.hasOwnProperty(type)) continue;
+            axis.push({"type": type, "x": graph.axis[type][1], "y": graph.axis[type][0]});
+        }
 
         width = window.innerWidth;
         height = window.innerHeight;
@@ -276,7 +289,7 @@
                 return node.label;
             })
             .style("display", "none")
-            .attr("font-size", 7)
+            .attr("font-size", 10)
             .attr("dx", 15)
             .attr("dy", 4)
             .attr("x", function (d) {
@@ -284,6 +297,41 @@
             })
             .attr("y", function (d) {
                 return d.dy
+            });
+
+        svg.append("g")
+            .attr("class", "type")
+            .selectAll("circle")
+            .data(axis)
+            .enter()
+            .append("circle")
+            .attr("r", function (vector, i) {
+                return 15;
+            })
+            .attr("fill", function (vector) {
+                return getColor(vector.type);
+            })
+            .attr("cx", function (vector, i) {
+                return width - 200;
+            })
+            .attr("cy", function (vector, i) {
+                return (i + 1) * 60;
+            });
+        svg.append("g")
+            .attr("class", "typeText")
+            .selectAll("text")
+            .data(axis)
+            .enter()
+            .append("text")
+            .text(function (vector) {
+                return vector.type;
+            })
+            .attr("font-size", 25)
+            .attr("x", function (vector) {
+                return width - 170
+            })
+            .attr("y", function (vector, i) {
+                return (i + 1) * 60 + 5;
             });
 
         d3.zoom().on("zoom", zooming)(svg);

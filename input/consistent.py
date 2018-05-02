@@ -6,7 +6,7 @@ import math
 import json
 
 
-def output(path, clusters, adj_list):
+def output(path, clusters, adj_list, categories_vectors):
     # clusters = [(x, y, s, n, t)]
     # x: horizontal position
     # y: vertical position
@@ -14,7 +14,7 @@ def output(path, clusters, adj_list):
     # n: cluster name
     # t: type
 
-    json_root = {"nodes": [], "links": []}
+    json_root = {"nodes": [], "links": [], "axis": categories_vectors}
     for (x, y, s, n, t) in clusters:
         json_root["nodes"].append({"id": n, "label": n, "level": s, "x": x, "y": y, "type": t})
     for cluster_name in adj_list:
@@ -84,7 +84,7 @@ def generate(acdc_cluster, relax_cluster, dep, out_file):
         )
         deps = read_deps(dep)
         adj_list = anal_cluster_deps(membership, deps)
-        output(out_file, clusters_pos, adj_list)
+        output(out_file, clusters_pos, adj_list, categories_vectors)
 
 
 if __name__ == "__main__":
