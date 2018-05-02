@@ -109,6 +109,11 @@ function getNodeColor(node, neighbors) {
   // }
   return '#0d2e63';
 
+  // if (node.level===1) return '#AFC8E7';
+  // else if (node.level===2) return '#9ADE8D';
+  //   else if (node.level===3) return '#9369BB';
+  //   else if (node.level===4) return '#FD9898';
+  // return node.level === 1 ? 'red' : 'gray'
 }
 
 function getNodeSize(node){
@@ -246,6 +251,7 @@ textElements = ga.append("g")
   .enter().append("text")
     .text(function (node) { return  node.label })
 	  .attr("font-size", getTextSize)
+    .attr("fill", "black")
 	  .attr("dx", 15)
     .attr("dy", 4)
     .on('click', openClass); //Added code 
@@ -253,8 +259,10 @@ textElements = ga.append("g")
 
 simulation.nodes(nodes).on('tick', () => {
   nodeElements
-  .attr("cx", function(d) { return d.x = Math.max(getNodeSize(d), Math.min(width - getNodeSize(d), d.x)); })
-        .attr("cy", function(d) { return d.y = Math.max(getNodeSize(d), Math.min(height - getNodeSize(d), d.y)); });
+  // .attr("cx", function(d) { return d.x = Math.max(getNodeSize(d), Math.min(width - getNodeSize(d), d.x)); })
+  //       .attr("cy", function(d) { return d.y = Math.max(getNodeSize(d), Math.min(height - getNodeSize(d), d.y)); });
+  .attr('cx', function (node) { return node.x; })
+  .attr('cy', function (node) { return node.y; })
 
   textElements
     .attr('x', function (node) { return node.x; })
