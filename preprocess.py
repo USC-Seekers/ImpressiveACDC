@@ -84,7 +84,7 @@ if __name__=="__main__":
     try:
         _, clusterFile, dependencyFile = sys.argv
     except:
-        print(" - Usage: python dep.py cluster_file_name dependency_file_name")
+        print(" - Usage: python preprocess.py cluster_file_name dependency_file_name")
         sys.exit(1)
     pattern = re.compile("[^_]*_")
     version = pattern.search(sys.argv[1]).group()
