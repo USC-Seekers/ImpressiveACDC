@@ -34,28 +34,28 @@
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 <script>
-    var container = null;
-    var svg = null;
-    var nodes = null;
-    var nodesAutoComplete = [];
-    var links = null;
-    var axis = null;
-    var connected = null;
-    var nodeDict = null;
-    var d3Nodes = null;
-    var d3Links = null;
-    var d3Texts = null;
-    var d3Axis = null;
-    var connectedToggle = 0;
-    var width = 1200;
-    var height = 800;
-    var colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#FD9898'];
+    let container = null;
+    let svg = null;
+    let nodes = null;
+    let nodesAutoComplete = [];
+    let links = null;
+    let axis = null;
+    let connected = null;
+    let nodeDict = null;
+    let d3Nodes = null;
+    let d3Links = null;
+    let d3Texts = null;
+    let d3Axis = null;
+    let connectedToggle = 0;
+    let width = 1200;
+    let height = 800;
+    let colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#FD9898'];
 
     $(function () {
         $("#search").autocomplete({source: nodesAutoComplete});
         $("#search-button").click(function () {
             if (svg === null) return;
-            var searchId = $("#search").val();
+            let searchId = $("#search").val();
 
             d3Nodes.style("opacity", function (node) {
                 return node.id !== searchId && !neighboring(nodeDict[searchId], node) ? 0.1 : 1;
@@ -69,10 +69,10 @@
         });
     });
 
-    var getNodeSize = function (node) {
+    let getNodeSize = function (node) {
         return node.level * 20;
     };
-    var getColor = function (type) {
+    let getColor = function (type) {
         switch (type) {
             case "sql":
                 return colors[0];
@@ -86,35 +86,36 @@
                 return colors[4];
         }
     };
-    var getNodePositionX = function (node) {
-        var rv = node.x * 30 + width / 2;
+    let getNodePositionX = function (node) {
+        let rv = node.x * 30 + width / 2;
         if (rv < 30) return 30;
         if (rv > width - 30) return width - 30;
         return rv;
     };
-    var getNodePositionY = function (node) {
-        var rv = node.y * 30 + height / 2;
+    let getNodePositionY = function (node) {
+        let rv = node.y * 30 + height / 2;
         if (rv < 30) return 30;
         if (rv > height - 30) return height - 30;
         return rv;
     };
 
-    var moveNode = function (adjNode, node) {
-        var r = Math.max(width, height);
-        var l = 0;
-        var dis = Math.sqrt(adjNode.x * adjNode.x + adjNode.y * adjNode.y);
-        var unitX = adjNode.x / dis;
-        var unitY = adjNode.y / dis;
-        var radiusSumSqr = (adjNode.radius + node.radius) * (adjNode.radius + node.radius);
-        var curDis = (node.dx - adjNode.dx) * (node.dx - adjNode.dx) + (node.dy - adjNode.dy) * (node.dy - adjNode.dy);
+    let moveNode = function (adjNode, node) {
+        let r = Math.max(width, height);
+        let l = 0;
+        let dis = Math.sqrt(adjNode.x * adjNode.x + adjNode.y * adjNode.y);
+        let unitX = adjNode.x / dis;
+        let unitY = adjNode.y / dis;
+        let radiusSumSqr = (adjNode.radius + node.radius) * (adjNode.radius + node.radius);
+        let curDis = (node.dx - adjNode.dx) * (node.dx - adjNode.dx) + (node.dy - adjNode.dy) * (node.dy - adjNode.dy);
         if (curDis > radiusSumSqr + 100) return false;
+        let m = null;
         while (true) {
-            var m = (l + r) / 2;
-            var ndx = adjNode.dx + m * unitX;
-            var ndy = adjNode.dy + m * unitY;
-            var diffX = ndx - node.dx;
-            var diffY = ndy - node.dy;
-            var nDisSqr = diffX * diffX + diffY * diffY;
+            m = (l + r) / 2;
+            let ndx = adjNode.dx + m * unitX;
+            let ndy = adjNode.dy + m * unitY;
+            let diffX = ndx - node.dx;
+            let diffY = ndy - node.dy;
+            let nDisSqr = diffX * diffX + diffY * diffY;
             if (nDisSqr > radiusSumSqr + 100 && nDisSqr < radiusSumSqr + 225) break;
             else if (nDisSqr < radiusSumSqr + 100) {
                 l = m;
@@ -128,13 +129,13 @@
         return true;
     };
 
-    var neighboring = function (a, b) {
+    let neighboring = function (a, b) {
         return (connected[a.id] && connected[a.id][b.id]) || (connected[b.id] && connected[b.id][a.id]);
     };
 
-    var connectedNodes = function () {
+    let connectedNodes = function () {
         if (connectedToggle === 0) {
-            var node = d3.select(this).node().__data__;
+            let node = d3.select(this).node().__data__;
             d3Nodes.style("opacity", function (o) {
                 return neighboring(node, o) || node === o ? 1 : 0.1;
             });
@@ -153,9 +154,10 @@
             connectedToggle = 0;
         }
     };
-    var dragging = function (d) {
-        var curX = d.dx + d3.event.x;
-        var curY = d.dy + d3.event.y;
+    /*
+    let dragging = function (d) {
+        let curX = d.dx + d3.event.x;
+        let curY = d.dy + d3.event.y;
         d3.select(this).attr("cx", curX).attr("cy", curY);
         d3Links.filter(function (link) {
             return link.source === d.id;
@@ -173,15 +175,23 @@
             .attr("x", curX)
             .attr("y", curY);
     };
-    var dragEnd = function (d) {
+
+    let dragEnd = function (d) {
         d.dx = d.dx + d3.event.x;
         d.dy = d.dy + d3.event.y;
     };
-    var zooming = function () {
+    */
+    let zooming = function () {
         container.attr("transform", d3.event.transform);
+        d3Texts.attr("transform", function (node) {
+            let s = 1 / d3.event.transform.k;
+            let dx = node.dx + 15;
+            let dy = node.dy + 4;
+            return `translate(${-dx * s} ${-dy * s}) scale(${s}) translate(${dx / s} ${dy / s})`
+        });
     };
 
-    var jsonFile = window.location.pathname.split('/').pop();
+    let jsonFile = window.location.pathname.split('/').pop();
     if (jsonFile.split('.').pop() !== "json") {
         jsonFile = "consistent.json"
     }
@@ -190,7 +200,7 @@
     }
     d3.json(jsonFile, function (error, graph) {
         nodeDict = {};
-        var nodes = graph.nodes.map(function (node) {
+        let nodes = graph.nodes.map(function (node) {
             node.dx = getNodePositionX(node);
             node.dy = getNodePositionY(node);
             node.radius = getNodeSize(node);
@@ -211,18 +221,18 @@
             return (a.x * a.x + a.y * a.y) - (b.x * b.x + b.y * b.y);
         });
         axis = [];
-        for (var type in graph.axis) {
+        for (let type in graph.axis) {
             if (!graph.axis.hasOwnProperty(type)) continue;
             axis.push({"type": type, "x": graph.axis[type][1], "y": graph.axis[type][0]});
         }
 
         width = window.innerWidth;
         height = window.innerHeight;
-        var change = false;
+        let change = false;
         do {
             change = false;
-            for (var i = 0; i < nodes.length; i++) {
-                for (var j = i + 1; j < nodes.length; j++) {
+            for (let i = 0; i < nodes.length; i++) {
+                for (let j = i + 1; j < nodes.length; j++) {
                     change = change || moveNode(nodes[i], nodes[j]);
                 }
             }
@@ -275,7 +285,7 @@
             .attr("cy", function (d) {
                 return d.dy
             })
-            .call(d3.drag().on("drag", dragging).on("end", dragEnd))
+            //.call(d3.drag().on("drag", dragging).on("end", dragEnd))
             .on('click', connectedNodes);
 
         d3Texts = container
@@ -289,7 +299,7 @@
                 return node.label;
             })
             .style("display", "none")
-            .attr("font-size", 10)
+            .attr("font-size", 12)
             .attr("dx", 15)
             .attr("dy", 4)
             .attr("x", function (d) {
