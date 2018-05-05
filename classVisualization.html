@@ -64,8 +64,22 @@
 
 var width = window.innerWidth;
 var height = window.innerHeight-60;
+function gup( name, url ) {
+             if (!url) url = location.href;
+             console.log(url);
+             name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+                var regexS = "[?]"+name+"=([^&#]*)";
+                 var regex = new RegExp( regexS );
+                var results = regex.exec( url );
+                 return results == null ? null : results[1];
+            }
+var fileName=gup('file', document.location.href);
+         fileName = fileName.split('/ImpressiveACDC/')[1];
+ fileName=fileName.split('.json')[0];
+ fileName=fileName+"-class.json";
+ console.log(fileName);
 
-d3.json("input/log4j-2.1-class.json", function(error, dataset) {
+d3.json(fileName, function(error, dataset) {
 var tooltip = d3.select("body")
     .append("div")
     .style("position", "absolute")
