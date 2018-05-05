@@ -67,7 +67,14 @@
     let width = null;
     let height = null;
     let inputHeight = null;
-    let colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#FD9898'];
+    let colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#FD9898', '#f7ec8f'];
+    let typeMap = {
+        "graphics": {index: 1, color: colors[1], name: "Graphics"},
+        "no_match": {index: 0, color: colors[0], name: "No Match"},
+        "io": {index: 2, color: colors[2], name: "IO"},
+        "networking": {index: 4, color: colors[5], name: "Networking"},
+        "sql": {index: 3, color: colors[3], name: "SQL"}
+    };
 
     $(function () {
         $("#search").autocomplete({source: nodesAutoComplete});
@@ -249,7 +256,12 @@
         axis = [];
         for (let type in graph.axis) {
             if (!graph.axis.hasOwnProperty(type)) continue;
-            axis.push({"type": type, "x": graph.axis[type][1], "y": graph.axis[type][0]});
+            axis.push(null);
+        }
+        for (let type in graph.axis) {
+            if (!graph.axis.hasOwnProperty(type)) continue;
+            let typeDef = typeMap[type];
+            axis[typeDef.index] = {name: typeDef.name, color: typeDef.color};
         }
 
         let change = false;
@@ -334,6 +346,8 @@
                 return d.dy
             });
 
+        let iconSize = 10;
+
         svg.append("g")
             .attr("class", "type")
             .selectAll("circle")
@@ -341,16 +355,16 @@
             .enter()
             .append("circle")
             .attr("r", function (vector, i) {
-                return 15;
+                return 10;
             })
             .attr("fill", function (vector) {
-                return getColor(vector.type);
+                return vector.color;
             })
             .attr("cx", function (vector, i) {
-                return width - 200;
+                return width - 150;
             })
             .attr("cy", function (vector, i) {
-                return (i + 1) * 60;
+                return (i + 1) * 30;
             });
         svg.append("g")
             .attr("class", "typeText")
@@ -359,14 +373,14 @@
             .enter()
             .append("text")
             .text(function (vector) {
-                return vector.type;
+                return vector.name;
             })
-            .attr("font-size", 25)
+            .attr("font-size", 16)
             .attr("x", function (vector) {
-                return width - 170
+                return width - 130
             })
             .attr("y", function (vector, i) {
-                return (i + 1) * 60 + 5;
+                return (i + 1) * 30 + 5;
             });
 
         d3.zoom().on("zoom", zooming)(svg);
