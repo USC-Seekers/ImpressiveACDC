@@ -3,6 +3,17 @@
 <meta charset="utf-8">
 <head>
     <style type="text/css">
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
         .nodes {
             stroke: #fff;
             stroke-width: 1.5px;
@@ -15,6 +26,13 @@
 
         text {
             stroke-width: 0;
+        }
+
+        .ui-widget {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
         }
 
     </style>
@@ -45,10 +63,10 @@
     let d3Nodes = null;
     let d3Links = null;
     let d3Texts = null;
-    let d3Axis = null;
     let connectedToggle = 0;
-    let width = 1200;
-    let height = 800;
+    let width = null;
+    let height = null;
+    let inputHeight = null;
     let colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#FD9898'];
 
     $(function () {
@@ -87,15 +105,20 @@
         }
     };
     let getNodePositionX = function (node) {
-        let rv = node.x * 30 + width / 2;
-        if (rv < 30) return 30;
-        if (rv > width - 30) return width - 30;
+        let unitWidth = 30;
+        let rv = node.x * unitWidth + width / 2;
+        if (rv < getNodeSize(node) + 10) rv = getNodeSize(node) + 10;
+        if (rv > width - getNodeSize(node) - 10) rv = width - getNodeSize(node) - 10;
         return rv;
     };
     let getNodePositionY = function (node) {
+        let unitHeight = 30;
         let rv = node.y * 30 + height / 2;
-        if (rv < 30) return 30;
-        if (rv > height - 30) return height - 30;
+        if (rv < getNodeSize(node) + 10) rv = getNodeSize(node) + 10;
+        if (rv > height - getNodeSize(node) - 10) rv = height - getNodeSize(node) - 10;
+        if (node.id === "org.apache.logging.log4j.perf.jmh.generated.ss") {
+            console.log(rv);
+        }
         return rv;
     };
 
@@ -199,6 +222,9 @@
         jsonFile = "/ImpressiveACDC/input/" + jsonFile;
     }
     d3.json(jsonFile, function (error, graph) {
+        width = window.innerWidth;
+        height = window.innerHeight;
+
         nodeDict = {};
         let nodes = graph.nodes.map(function (node) {
             node.dx = getNodePositionX(node);
@@ -226,8 +252,6 @@
             axis.push({"type": type, "x": graph.axis[type][1], "y": graph.axis[type][0]});
         }
 
-        width = window.innerWidth;
-        height = window.innerHeight;
         let change = false;
         do {
             change = false;
@@ -240,6 +264,7 @@
 
         svg = d3.select("svg");
         svg.attr('width', width).attr('height', height);
+        svg.style('top', `${inputHeight}px`);
 
         container = svg.append("g").attr("class", "everything");
 
