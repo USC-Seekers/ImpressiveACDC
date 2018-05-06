@@ -168,7 +168,7 @@ var tooltip = d3.select("body")
 
             })
             .on("mouseover", function(d) {
-              tooltip.text("Name: " + d.data.name + "    Type: "+ d.data.type + "      Complexity: " + d.data.complexity);
+              tooltip.text("Name: " + d.data.name + "    Type: "+ d.data.type + "      SLOC: " + d.data.complexity);
               tooltip.style("visibility", "visible");
               })
              .on("mousemove", function() {
