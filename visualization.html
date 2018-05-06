@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
+  <title>ImpressiveACDC Dependency View</title>
   <style type="text/css">
     .nodes {
     stroke: #fff;
@@ -10,6 +11,9 @@
     stroke: #999;
     stroke-opacity: .6;
 }
+#consistentButton{
+  display:none;
+}
 
   </style>
 
@@ -17,6 +21,7 @@
 <body>
   <input type="file" id="fileInput" accept=".json" onchange="loadFile()">
 
+<button id="consistentButton" onclick="getConsistent()"> Go to Consistent View</button>
   <div class="ui-widget">
    <input id="search">
     <button type="button" onclick="searchNode()">Search</button>
@@ -38,15 +43,29 @@ var nodeElements;
 var linkElements;
 var textElements;
 var jsonFile;
+var name__;
 function loadFile(e)
 {
-  var name = document.getElementById('fileInput'); 
+   var name = document.getElementById('fileInput'); 
+   name__=name.files.item(0).name;
         jsonFile= "/ImpressiveACDC/input/"+name.files.item(0).name;
 
   $(function () {
     $("#overAll").empty();
   });
   loading();
+  document.getElementById("consistentButton").style.display="block";
+
+}
+
+function getConsistent()
+{
+  var justName = name__;
+  justName=justName.split('.json')[0];
+  justName=justName+"-consistent.json";
+  var url='http://54.183.64.51/consistent/' + justName;
+  console.log(url);
+   window.open(url,'_blank');
 }
 
 $(function () {
