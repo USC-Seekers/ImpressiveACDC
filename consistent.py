@@ -27,7 +27,7 @@ def output(path, clusters, adj_list, categories_vectors):
             })
 
     f = open(path, 'w')
-    json.dump(json_root, f)
+    json.dump(json_root, f, indent=2)
 
 def calc_type(pos, categories_vector):
     # pos: (pos_y, pos_x)
@@ -87,5 +87,11 @@ def generate(acdc_cluster, relax_cluster, dep, out_file):
         output(out_file, clusters_pos, adj_list, categories_vectors)
 
 
+import sys
 if __name__ == "__main__":
-    generate("log4j-2.1_acdc_clustered.rsf", "log4j-2.1_relax_clusters.rsf", "../input/log4j-2.1_deps.rsf", "consistent.json")
+    try:
+        _, adcdFile, relaxFile, depsFile, outFile = sys.argv
+    except:
+        print(" - Usage: python consistent.py acdcFile relaxFile depsFile outFile")
+        sys.exit(1)
+    generate(adcdFile, relaxFile, depsFile, outFile)

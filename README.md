@@ -1,29 +1,30 @@
 # ImpressiveACDE
-<!-- org.apache.logging.log4j.core.util.datetime.ss -->
 ## Pre-process Data
-Run `preprocess` to convert ACDC recovery result into json format for visualization input. 
+* Run ACDC on the system and take the result
+    * e.g. hadoop-0.2.0_relax_clusters.rsf
+* Run RELAX on the system and take the result
+    * e.g. hadoop-0.2.0_acdc_clustered.rsf, hadoop-0.2.0_deps.rsf
+* Run UCC on the system
+    * e.g. `UCC -dir hadoop-0.2.0`
+* Rename the UCC Java outfile result
+    * e.g. `mv Java_outfile.csv hadoop-0.2.0-Java_outfile.csv`
+
+Group these 4 files under the same directory and run `main.py` to pre-process the data. The result will be written in json format and will serve as the input for visualization. 
 
 ```shell
-$ # For hadoop-0.2.0
-$ python3 preprocess.py input/hadoop-0.2.0_acdc_clustered.rsf input/hadoop-0.2.0_deps.rsf
-$ # For log4j-2.1
-$ python3 preprocess.py input/log4j-2.1_acdc_clustered.rsf input/log4j-2.1_deps.rsf
-$ # For log4j-2.4
-$ python3 preprocess.py input/log4j-2.4_acdc_clustered.rsf input/log4j-2.4_deps.rsf
-$ # For haddoop-0.10.1
-$ python3 preprocess.py input/hadoop/0.10.1/hadoop-0.10.1_acdc_clustered.rsf input/hadoop/0.10.1/hadoop-0.10.1_deps.rsf
-$ # For haddoop-0.11.2
-$ python3 preprocess.py input/hadoop/0.11.2/hadoop-0.11.2_acdc_clustered.rsf input/hadoop/0.11.2/hadoop-0.11.2_deps.rsf
-$ # For haddoop-0.14.0
-$ python3 preprocess.py input/hadoop/0.14.0/hadoop-0.14.0_acdc_clustered.rsf input/hadoop/0.14.0/hadoop-0.14.0_deps.rsf
-$ # For haddoop-0.14.2
-$ python3 preprocess.py input/hadoop/0.14.2/hadoop-0.14.2_acdc_clustered.rsf input/hadoop/0.14.2/hadoop-0.14.2_deps.rsf
-$ # For haddoop-0.15.0
-$ python3 preprocess.py input/hadoop/0.15.0/hadoop-0.15.0_acdc_clustered.rsf input/hadoop/0.15.0/hadoop-0.15.0_deps.rsf
-$ # For haddoop-0.16.0
-$ python3 preprocess.py input/hadoop/0.16.0/hadoop-0.16.0_acdc_clustered.rsf input/hadoop/0.16.0/hadoop-0.16.0_deps.rsf
-$ # For haddoop-0.17.0
-$ python3 preprocess.py input/hadoop/0.17.0/hadoop-0.17.0_acdc_clustered.rsf input/hadoop/0.17.0/hadoop-0.17.0_deps.rsf
+$ mkdir data
+$ mv hadoop-0.2.0_relax_clusters.rsf hadoop-0.2.0_acdc_clustered.rsf, hadoop-0.2.0_deps.rsf hadoop-0.2.0-Java_outfile.csv data
+$ # Run preprocessing script: python3 main.py in_dir sys_version out_dir
+$ python3 main.py data hadoop-0.2.0 input
+$ # Another example
+$ python3 main.py input/hadoop/0.10.1/ hadoop-0.10.1 input
+```
+
+## Start Server
+```shell
+$ cd server
+$ npm install
+$ npm start
 ```
 
 ## Release

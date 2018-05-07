@@ -21,5 +21,5 @@ def generate_class_json(acdc_cluster, relax_cluster, ucc_size, out_file):
             rv[cluster_name].append(package_rv)
 
     f = open(out_file, "w")
-    json.dump(rv, f)
+    json.dump(rv, f, indent=2)
     f.close()
