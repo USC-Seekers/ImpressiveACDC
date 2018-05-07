@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+
+        #label {
+            text-align: center;
+            padding-bottom: 1px;
+            margin-bottom: 2px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        #search-group {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+<h2 id="label"></h2>
+<div id="search-group">
+    <select id="input-select">
+
+    </select>
+    <label for="search"></label><input id="search">
+    <button id="search-button">Search</button>
+    <button id="toggle-button">Toggle View</button>
+</div>
+</body>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    let autoCompleteSource = null;
+
+
+    let setLabel = function (text) {
+        d3.select("#label").html(text);
+    };
+    let resetLabel = function () {
+        d3.select("#label").html("");
+    };
+    let regSearch = function (callback) {
+        $("#search-button").click(callback);
+    };
+    let resetSearch = function () {
+        $("#search-button").unbind("click");
+    };
+    let regAutoComplete = function (source) {
+        autoCompleteSource = source;
+        $("#search").autocomplete({
+            source: source
+        });
+    };
+    let resetAutoComplete = function () {
+        if (autoCompleteSource) {
+            $("#search").autocomplete("destroy");
+        }
+    };
+    let getInputName = function () {
+        let select = document.querySelector("#input-select");
+        if (select.selectedIndex < 0) return null;
+        return select.options[select.selectedIndex].innerHTML;
+    };
+
+    class ForceView {
+        static getNeighbors(node) {
+            return links.reduce(function (neighbors, link) {
+                    if (link.target.id === node.id) {
+                        neighbors.push(link.source.id);
+                    } else if (link.source.id === node.id) {
+                        neighbors.push(link.target.id);
+                    }
+                    return neighbors;
+                },
+                [node.id]);
+        }
+
+        static selectNode(context, selectedNode) {
+            let neighbors = ForceView.getNeighbors(selectedNode);
+            context.nodeElements.attr('fill', function (node) {
+                return ForceView.getNodeColor(node, neighbors);
+            });
+            context.textElements.attr('fill', function (node) {
+                return ForceView.getTextColor(node, neighbors);
+            });
+            context.linkElements.attr('stroke', function (link) {
+                return ForceView.getLinkColor(selectedNode, link);
+            });
+        }
+
+        static zoomActions(context) {
+            context.ga.attr("transform", d3.event.transform)
+        }
+
+        static getNodeSize(node) {
+            return node.level * 50;
+        }
+
+        static getNodeColor(node, neighbors) {
+            return "#FD7F28";
+        }
+
+        static getTextSize(node) {
+            return node.level === 1 ? '10' : '7';
+        }
+
+        static getTextColor(node, neighbors) {
+            return Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1 ? 'green' : 'black';
+        }
+
+        static neighboring(context, a, b) {
+            return context.linkedByIndex[a.id + "," + b.id];
+        }
+
+        static isNeighborLink(node, link) {
+            return link.target.id === node.id || link.source.id === node.id;
+        }
+
+        static getLinkColor(node, link) {
+            return ForceView.isNeighborLink(node, link) ? 'green' : '#E5E5E5';
+        }
+
+        static connectedNodes(context, node) {
+            if (context.toggle === 0) {
+                let d = node.__data__;
+                context.nodeElements.style("opacity", function (node) {
+                    return ForceView.neighboring(context, d, node) || ForceView.neighboring(context, node, d) || node.id === d.id ? 1 : 0.1;
+                });
+                context.linkElements.style("opacity", function (link) {
+                    return d.index === link.source.index || d.index === link.target.index ? 1 : 0.1;
+                });
+                context.textElements.style("opacity", function (node) {
+                    return ForceView.neighboring(context, d, node) || ForceView.neighboring(context, node, d) || node.id === d.id ? 1 : 0.1;
+                });
+                context.toggle = 1;
+            } else {
+                context.nodeElements.style("opacity", 1);
+                context.linkElements.style("opacity", 1);
+                context.textElements.style("opacity", 1);
+                context.toggle = 0;
+            }
+        }
+
+        static openClass(d) {
+            viewDisplay.switchView("class", d.label);
+        }
+
+        static searchNode(context) {
+            let selectedVal = document.getElementById("search").value;
+            if (selectedVal === "none") {
+                context.nodeElements.style("stroke", "white")
+                    .style("stroke-width", "1");
+            } else {
+                let selected = context.nodeElements.filter(function (d, i) {
+                    return d.label !== selectedVal;
+                });
+                let selectedText = context.textElements.filter(function (d, i) {
+                    return d.label !== selectedVal;
+                });
+                selected.style("opacity", "0");
+                context.linkElements.style("opacity", "0");
+                selectedText.style("opacity", "0");
+                d3.selectAll("line, text, circle")
+                    .transition()
+                    .duration(5000)
+                    .style("opacity", 1);
+            }
+        }
+
+        constructor(jsonFile, callback) {
+            this.viewName = "force";
+            this.svg = null;
+            this.linkForce = null;
+            this.collision = null;
+            this.simulation = null;
+            this.dragDrop = null;
+            this.ga = null;
+            this.zoomHandler = null;
+            this.linkElements = null;
+            this.nodeElements = null;
+            this.textElements = null;
+            this.toggle = null;
+
+            this.data = null;
+            this.links = null;
+            this.nodes = null;
+            this.optArray = [];
+            this.linkedByIndex = [];
+
+            let cur = this;
+
+            d3.json(jsonFile, function (error, graph) {
+                if (error) {
+                    console.log(error);
+                    return;
+                }
+                cur.data = graph;
+                cur.links = graph.links;
+                cur.nodes = graph.nodes;
+                for (let i = 0; i < cur.nodes.length; i++) {
+                    cur.optArray.push(cur.nodes[i].label);
+                }
+                cur.links.forEach(function (d) {
+                    cur.linkedByIndex[d.source + "," + d.target] = 1;
+                });
+                if (callback) callback(cur);
+            });
+        }
+
+        off() {
+            resetAutoComplete();
+            resetSearch();
+            if (this.svg) {
+                this.svg.remove();
+            }
+            this.svg = null;
+            this.linkForce = null;
+            this.collision = null;
+            if (this.simulation) {
+                this.simulation.stop();
+            }
+            this.simulation = null;
+            this.dragDrop = null;
+            this.ga = null;
+            this.zoomHandler = null;
+            this.linkElements = null;
+            this.nodeElements = null;
+            this.textElements = null;
+            this.toggle = null;
+        }
+
+        on() {
+            if (!this.data) return;
+            let cur = this;
+            regAutoComplete(cur.optArray);
+            regSearch(function () {
+                ForceView.searchNode(cur);
+            });
+            this.toggle = 0;
+            this.svg = d3.select('body').append("svg");
+            this.svg.attr("width", width).attr('height', height);
+            this.linkForce = d3.forceLink()
+                .id(function (link) {
+                    return link.id
+                })
+                .strength(function (link) {
+                    return link.strength * 0.5
+                })
+                .distance(function (link) {
+                    return 100
+                });
+            this.collision = d3.forceCollide()
+                .radius(function (circle) {
+                    return 2;
+                });
+            this.simulation = d3.forceSimulation()
+                .force('link', this.linkForce)
+                .force('charge', d3.forceManyBody().strength(-80))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', this.collision);
+            this.dragDrop = d3.drag()
+                .on('start', function (node) {
+                    node.fx = node.x;
+                    node.fy = node.y;
+                })
+                .on('drag', function (node) {
+                    cur.simulation.alphaTarget(0.7).restart();
+                    node.fx = d3.event.x;
+                    node.fy = d3.event.y;
+                })
+                .on('end', function (node) {
+                    if (!d3.event.active) {
+                        cur.simulation.alphaTarget(0);
+                    }
+                    node.fx = null;
+                    node.fy = null;
+                });
+            this.ga = this.svg.append("g");
+            this.zoomHandler = d3.zoom().on("zoom", function () {
+                ForceView.zoomActions(cur);
+            });
+            this.zoomHandler(this.svg);
+            this.linkElements = this.ga.append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(cur.links)
+                .enter()
+                .append("line")
+                .attr("stroke-width", 1)
+                .attr("stroke", "rgba(50, 50, 50, 0.2")
+                .style("stroke-opacity", "0.6");
+            this.nodeElements = this.ga.append("g")
+                .attr("class", "nodes")
+                .selectAll("circle")
+                .data(this.nodes)
+                .enter()
+                .append("circle")
+                .attr("r", ForceView.getNodeSize)
+                .attr("fill", ForceView.getNodeColor)
+                .style("stroke", "#fff")
+                .style("stroke-width", "1.5px")
+                .call(this.dragDrop)
+                .on('click', function () {
+                    ForceView.connectedNodes(cur, this);
+                });
+            this.textElements = this.ga.append("g")
+                .attr("class", "texts")
+                .selectAll("text")
+                .data(this.nodes)
+                .enter()
+                .append("text")
+                .text(function (node) {
+                    return node.label;
+                })
+                .attr("font-size", ForceView.getTextSize)
+                .attr("fill", "black")
+                .attr("dx", 15)
+                .attr("dy", 4)
+                .on("click", ForceView.openClass);
+            this.simulation.nodes(this.nodes).on('tick', function () {
+                cur.nodeElements
+                    .attr("cx", function (node) {
+                        return node.x
+                    })
+                    .attr('cy', function (node) {
+                        return node.y
+                    });
+                cur.textElements
+                    .attr('x', function (node) {
+                        return node.x;
+                    })
+                    .attr('y', function (node) {
+                        return node.y;
+                    });
+                cur.linkElements
+                    .attr('x1', function (link) {
+                        return link.source.x;
+                    })
+                    .attr('y1', function (link) {
+                        return link.source.y;
+                    })
+                    .attr('x2', function (link) {
+                        return link.target.x;
+                    })
+                    .attr('y2', function (link) {
+                        return link.target.y;
+                    });
+            });
+            this.simulation.force("link").links(this.links);
+        }
+    }
+
+    class ConsistentView {
+        static getNodeSize(node) {
+            return node.level * 20;
+        };
+
+        static getColor(context, type) {
+            let colors = context.colors;
+            switch (type) {
+                case "sql":
+                    return colors[0];
+                case "graphics":
+                    return colors[1];
+                case "io":
+                    return colors[2];
+                case "networking":
+                    return colors[3];
+                case "no_match":
+                    return colors[4];
+            }
+        };
+
+        static getNodePositionX(node) {
+            let unitWidth = 30;
+            let rv = node.x * unitWidth + width / 2;
+            if (rv < ConsistentView.getNodeSize(node) + 10) rv = ConsistentView.getNodeSize(node) + 10;
+            if (rv > width - ConsistentView.getNodeSize(node) - 10) rv = width - ConsistentView.getNodeSize(node) - 10;
+            return rv;
+        };
+
+        static getNodePositionY(node) {
+            let unitHeight = 30;
+            let rv = node.y * 30 + height / 2;
+            if (rv < ConsistentView.getNodeSize(node) + 10) rv = ConsistentView.getNodeSize(node) + 10;
+            if (rv > height - ConsistentView.getNodeSize(node) - 10) rv = height - ConsistentView.getNodeSize(node) - 10;
+            return rv;
+        };
+
+        static moveNode(adjNode, node) {
+            let r = Math.max(width, height);
+            let l = 0;
+            let dis = Math.sqrt(adjNode.x * adjNode.x + adjNode.y * adjNode.y);
+            let unitX = adjNode.x / dis;
+            let unitY = adjNode.y / dis;
+            let radiusSumSqr = (adjNode.radius + node.radius) * (adjNode.radius + node.radius);
+            let curDis = (node.dx - adjNode.dx) * (node.dx - adjNode.dx) + (node.dy - adjNode.dy) * (node.dy - adjNode.dy);
+            if (curDis > radiusSumSqr + 100) return false;
+            let m = null;
+            while (true) {
+                m = (l + r) / 2;
+                let ndx = adjNode.dx + m * unitX;
+                let ndy = adjNode.dy + m * unitY;
+                let diffX = ndx - node.dx;
+                let diffY = ndy - node.dy;
+                let nDisSqr = diffX * diffX + diffY * diffY;
+                if (nDisSqr > radiusSumSqr + 100 && nDisSqr < radiusSumSqr + 225) break;
+                else if (nDisSqr < radiusSumSqr + 100) {
+                    l = m;
+                }
+                else {
+                    r = m;
+                }
+            }
+            adjNode.dx += m * unitX;
+            adjNode.dy += m * unitY;
+            return true;
+        };
+
+        static neighboring(context, a, b) {
+            return (context.connected[a.id] && context.connected[a.id][b.id]) || (context.connected[b.id] && context.connected[b.id][a.id]);
+        };
+
+        static connectedNodes(context, d3Node) {
+            if (context.connectedToggle === 0) {
+                let node = d3Node.__data__;
+                context.d3Nodes.style("opacity", function (o) {
+                    return ConsistentView.neighboring(context, node, o) || node === o ? 1 : 0.1;
+                });
+                context.d3Texts.style("display", function (o) {
+                    return ConsistentView.neighboring(context, node, o) || node === o ? "" : "none";
+                });
+                context.d3Links.style("opacity", function (o) {
+                    return o.source === node.id || o.target === node.id ? 1 : 0.1;
+                });
+                context.connectedToggle = 1;
+            }
+            else {
+                context.d3Nodes.style("opacity", 1);
+                context.d3Links.style("opacity", 1);
+                context.d3Texts.style("display", "none");
+                context.connectedToggle = 0;
+            }
+        };
+
+        static zooming(context) {
+            context.container.attr("transform", d3.event.transform);
+            context.d3Texts.attr("transform", function (node) {
+                let s = 1 / d3.event.transform.k;
+                let dx = node.dx + 15;
+                let dy = node.dy + 4;
+                return `translate(${-dx * s} ${-dy * s}) scale(${s}) translate(${dx / s} ${dy / s})`
+            });
+        };
+
+        static openClass(node) {
+            viewDisplay.switchView('class', node.label);
+        }
+
+        constructor(svgFile, callback) {
+            this.viewName = "consistent";
+            this.container = null;
+            this.svg = null;
+            this.d3Nodes = null;
+            this.d3Links = null;
+            this.d3Texts = null;
+            this.connectedToggle = 0;
+
+            this.colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#f7ec8f'];
+            let colors = this.colors;
+            this.typeMap = {
+                "graphics": {index: 1, color: colors[1], name: "Graphics"},
+                "no_match": {index: 0, color: colors[0], name: "No Match"},
+                "io": {index: 2, color: colors[2], name: "IO"},
+                "networking": {index: 4, color: colors[4], name: "Networking"},
+                "sql": {index: 3, color: colors[3], name: "SQL"}
+            };
+
+            this.nodes = null;
+            this.links = null;
+            this.nodesAutoComplete = [];
+            this.nodeDict = {};
+            this.connected = {};
+            this.axis = [];
+            let cur = this;
+            d3.json(svgFile, function (error, graph) {
+                cur.nodes = graph.nodes.map(function (node) {
+                    node.dx = ConsistentView.getNodePositionX(node);
+                    node.dy = ConsistentView.getNodePositionY(node);
+                    node.radius = ConsistentView.getNodeSize(node);
+                    node.color = ConsistentView.getColor(cur, node.type);
+                    cur.nodeDict[node.id] = node;
+                    cur.nodesAutoComplete.push(node.id);
+                    return node;
+                });
+                cur.links = graph.links;
+                cur.links.forEach(function (val) {
+                    if (!cur.connected[val.source]) {
+                        cur.connected[val.source] = {}
+                    }
+                    cur.connected[val.source][val.target] = true;
+                });
+                cur.nodes.sort(function (a, b) {
+                    return (a.x * a.x + a.y * a.y) - (b.x * b.x + b.y * b.y);
+                });
+                for (let type in graph.axis) {
+                    if (!graph.axis.hasOwnProperty(type)) continue;
+                    cur.axis.push(null);
+                }
+                for (let type in graph.axis) {
+                    if (!graph.axis.hasOwnProperty(type)) continue;
+                    let typeDef = cur.typeMap[type];
+                    cur.axis[typeDef.index] = {name: typeDef.name, color: typeDef.color};
+                }
+
+                let change = false;
+                do {
+                    change = false;
+                    for (let i = 0; i < cur.nodes.length; i++) {
+                        for (let j = i + 1; j < cur.nodes.length; j++) {
+                            change = change || ConsistentView.moveNode(cur.nodes[i], cur.nodes[j]);
+                        }
+                    }
+                } while (change === true);
+                if (callback) callback(cur);
+            });
+        }
+
+        off() {
+            if (this.svg) {
+                this.svg.remove();
+            }
+            this.container = null;
+            this.svg = null;
+            this.d3Nodes = null;
+            this.d3Links = null;
+            this.d3Texts = null;
+            this.connectedToggle = 0;
+
+        }
+
+        on() {
+            let cur = this;
+
+            cur.svg = d3.select("body").append("svg");
+            cur.svg.attr('width', width)
+                .attr('height', height)
+                .style('top', '0')
+                .style('left', '0')
+                .style('position', 'absolute')
+                .style('z-index', '0');
+            cur.container = cur.svg.append("g").attr("class", "everything");
+
+            cur.d3Links = cur.container
+                .append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(cur.links)
+                .enter()
+                .append("line")
+                .attr('x1', function (link) {
+                    return cur.nodeDict[link.source].dx;
+                })
+                .attr('y1', function (link) {
+                    return cur.nodeDict[link.source].dy;
+                })
+                .attr('x2', function (link) {
+                    return cur.nodeDict[link.target].dx;
+                })
+                .attr('y2', function (link) {
+                    return cur.nodeDict[link.target].dy;
+                })
+                .attr("stroke-width", 1)
+                .attr("stroke", "rgba(50, 50, 50, 0.2)")
+                .style("stroke-opacity", "0.6");
+
+            cur.d3Nodes = cur.container
+                .append("g")
+                .attr("class", "nodes")
+                .selectAll("circle")
+                .data(cur.nodes)
+                .enter()
+                .append("circle")
+                .attr("r", function (d) {
+                    return d.radius;
+                })
+                .attr("fill", function (d) {
+                    return d.color;
+                })
+                .attr("cx", function (d) {
+                    return d.dx
+                })
+                .attr("cy", function (d) {
+                    return d.dy
+                })
+                .style("stroke", "#fff")
+                .style("stroke-width", "1.5px")
+                .on('click', function () {
+                    ConsistentView.connectedNodes(cur, this);
+                });
+            cur.d3Texts = cur.container
+                .append("g")
+                .attr("class", "texts")
+                .selectAll("text")
+                .data(cur.nodes)
+                .enter()
+                .append("text")
+                .text(function (node) {
+                    return node.label;
+                })
+                .style("display", "none")
+                .attr("font-size", 12)
+                .attr("dx", 15)
+                .attr("dy", 4)
+                .attr("x", function (d) {
+                    return d.dx
+                })
+                .attr("y", function (d) {
+                    return d.dy
+                })
+                .on("click", ConsistentView.openClass);
+
+            cur.svg.append("g")
+                .attr("class", "type")
+                .selectAll("circle")
+                .data(cur.axis)
+                .enter()
+                .append("circle")
+                .attr("r", function (vector, i) {
+                    return 10;
+                })
+                .attr("fill", function (vector) {
+                    return vector.color;
+                })
+                .attr("cx", function (vector, i) {
+                    return width - 150;
+                })
+                .attr("cy", function (vector, i) {
+                    return (i + 1) * 30;
+                });
+            cur.svg.append("g")
+                .attr("class", "typeText")
+                .selectAll("text")
+                .data(cur.axis)
+                .enter()
+                .append("text")
+                .text(function (vector) {
+                    return vector.name;
+                })
+                .attr("font-size", 16)
+                .attr("x", function (vector) {
+                    return width - 130
+                })
+                .attr("y", function (vector, i) {
+                    return (i + 1) * 30 + 5;
+                });
+            d3.zoom().on("zoom", function () {
+                ConsistentView.zooming(cur);
+            })(cur.svg);
+        }
+    }
+
+    class ClassView {
+        static zoomActions(context) {
+            context.ga
+                .attr("transform", d3.event.transform);
+        }
+        constructor(svgFile, callback) {
+            let cur = this;
+            this.viewName = "class";
+            this.tooltip = null;
+            this.myParam = "org.apache.logging.log4j.core.jackson.ss";
+            this.bubble = null;
+            this.svg = null;
+            this.ga = null;
+            this.nodes = null;
+            this.node = null;
+
+            this.color = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#f7ec8f', '#edced7'];
+            let colors = this.color;
+            this.typeMap = [
+                {color: colors[0], name: "No Match"},
+                {color: colors[1], name: "Graphics"},
+                {color: colors[2], name: "IO"},
+                {color: colors[3], name: "SQL"},
+                {color: colors[4], name: "Networking"},
+                {color: colors[5], name: "NULL"}
+            ];
+
+            this.data = null;
+
+            d3.json(svgFile, function (error, data) {
+                cur.data = data;
+                if (callback) callback(cur);
+            });
+        }
+
+        off() {
+            resetLabel();
+            if (this.tooltip) this.tooltip.remove();
+            this.tooltip = null;
+            this.myParam = null;
+            this.bubble = null;
+            if (this.svg) this.svg.remove();
+            this.svg = null;
+            this.nodes = null;
+            this.node = null;
+        }
+
+        on(classId) {
+            let cur = this;
+            cur.myParam = classId;
+            setLabel(cur.myParam);
+            cur.tooltip = d3.select("body")
+                .append("div")
+                .style("position", "absolute")
+                .style("z-index", "10")
+                .style("visibility", "hidden")
+                .style("color", "white")
+                .style("padding", "8px")
+                .style("background-color", "rgba(0, 0, 0, 0.75)")
+                .style("border-radius", "6px")
+                .style("font", "12px sans-serif")
+                .text("tooltip");
+
+            let dataSet = {"children": cur.data[cur.myParam]};
+            cur.bubble = d3.pack(dataSet)
+                .size([width, height])
+                .padding(0.5);
+            cur.svg = d3.select("body")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .attr("class", "bubble");
+            cur.ga = cur.svg.append("g");
+            cur.nodes = d3.hierarchy(dataSet)
+                .sum(function (d) {
+                    if (d.complexity === null) return 2;
+                    return d.complexity;
+                });
+            cur.node = cur.ga.selectAll(".node")
+                .data(cur.bubble(cur.nodes).descendants())
+                .enter()
+                .filter(function (d) {
+                    return !d.children;
+                })
+                .append("g")
+                .attr("class", "node")
+                .attr("transform", function (d) {
+                    return `translate(${d.x},${d.y})`;
+                });
+            cur.node.append("title")
+                .text(function (d) {
+                    return d.name;
+                });
+            cur.node.append("circle")
+                .attr("r", function (d) {
+                    return d.r;
+                })
+                .style("fill", function (d, i) {
+                    let color = cur.color;
+                    if (d.data.type === "no_match") {
+                        return color[0];
+                    }
+                    else if (d.data.type === "graphics") {
+                        return color[1];
+                    }
+                    else if (d.data.type === "io") {
+                        return color[2];
+                    }
+                    else if (d.data.type === "sql") {
+                        return color[3];
+                    }
+                    else if (d.data.type === "networking") {
+                        return color[4];
+                    }
+                    else return color[5];
+                })
+                .on("mouseover", function (d) {
+                    cur.tooltip.text(`Name: ${d.data.name}    Type: ${d.data.type}      Complexity: ${d.data.complexity}`)
+                        .style("visibility", "visible");
+                })
+                .on("mousemove", function () {
+                    cur.tooltip.style("top", (d3.event.pageY - 10) + "px")
+                        .style("left", (d3.event.pageX + 10) + "px");
+                });
+            cur.node.append("text")
+                .attr("dy", ".2em")
+                .style("text-anchor", "middle")
+                .text(function (d) {
+                    if (d.data.name.length > 0) {
+                        let stringSet = d.data.name.split(".");
+                        let size = stringSet.length;
+                        return stringSet[size - 3] + "." + stringSet[size - 2] + ".";
+                    }
+                    else return "";
+                })
+                .attr("font-family", "sans-serif")
+                .attr("font-size", function (d) {
+                    return d.r / 6;
+                })
+                .attr("fill", "black");
+
+            cur.node.append("text")
+                .attr("dy", "1.3em")
+                .style("text-anchor", "middle")
+                .text(function (d) {
+                    if (d.data.name.length > 0) {
+
+                        let stringSet = d.data.name.split(".");
+                        let size = stringSet.length;
+
+                        return stringSet[size - 1];
+                    }
+                    else return "";
+
+                })
+                .attr("font-family", "Gill Sans", "Gill Sans MT")
+                .attr("font-size", function (d) {
+                    return d.r / 6;
+                })
+                .attr("fill", "black");
+            cur.svg.append("g")
+                .attr("class", "type")
+                .selectAll("circle")
+                .data(cur.typeMap)
+                .enter()
+                .append("circle")
+                .attr("r", function (vector, i) {
+                    return 10;
+                })
+                .attr("fill", function (vector) {
+                    return vector.color;
+                })
+                .attr("cx", function (vector, i) {
+                    return width - 150;
+                })
+                .attr("cy", function (vector, i) {
+                    return (i + 1) * 30;
+                });
+            cur.svg.append("g")
+                .attr("class", "typeText")
+                .selectAll("text")
+                .data(cur.typeMap)
+                .enter()
+                .append("text")
+                .text(function (vector) {
+                    return vector.name;
+                })
+                .attr("font-size", 16)
+                .attr("x", function (vector) {
+                    return width - 130
+                })
+                .attr("y", function (vector, i) {
+                    return (i + 1) * 30 + 5;
+                });
+            d3.zoom().on("zoom", function () {
+                ClassView.zoomActions(cur);
+            })(cur.svg);
+            d3.select(self.frameElement)
+                .style("height", height + "px")
+                .style("width", width + "px");
+        }
+    }
+
+    class ViewDisplay {
+        static toggleHandler(context) {
+            if (!context.curView) return;
+            if (context.curView instanceof ForceView) {
+                return context.switchView("consistent");
+            }
+            if (context.curView instanceof ConsistentView) {
+                return context.switchView("force");
+            }
+            if (context.curView instanceof ClassView) {
+                return context.switchView(context.baseView);
+            }
+        }
+
+        constructor(callback) {
+            this.baseView = null;
+            this.curView = null;
+            this.inputName = null;
+            this.views = {"force": null, "consistent": null, "class": null};
+
+            this.viewsClass = {"force": ForceView, "consistent": ConsistentView, "class": ClassView};
+
+            let cur = this;
+            d3.json("input/inventory.json", function (error, inventory) {
+                if (error) {
+                    alert(error);
+                    return;
+                }
+                d3.select("#input-select")
+                    .selectAll("option")
+                    .data(inventory)
+                    .enter()
+                    .append("option")
+                    .html(function (d) {
+                        return d;
+                    });
+                if (callback) callback(cur);
+            });
+        }
+
+        off() {
+            if (this.curView) {
+                this.curView.off();
+            }
+            this.curView = null;
+            this.baseView = null;
+            this.inputName = null;
+            this.views = {"force": null, "consistent": null, "class": null};
+        }
+
+        on(inputName) {
+            this.inputName = inputName;
+            this.switchView("force");
+        }
+
+        constructInputName(viewName) {
+            switch (viewName) {
+                case "force":
+                    return `input/${this.inputName}.json`;
+                case "consistent":
+                    return `input/${this.inputName}-consistent.json`;
+                case "class":
+                    return `input/${this.inputName}-class.json`;
+            }
+        }
+
+        switchView(viewName, onParam) {
+            let cur = this;
+            if (this.curView) {
+                this.curView.off();
+            }
+            if (viewName === "class") {
+                this.baseView = this.curView.viewName;
+            }
+            if (this.views[viewName]) {
+                this.curView = this.views[viewName];
+                this.views[viewName].on(onParam);
+                return;
+            }
+            this.views[viewName] = new this.viewsClass[viewName](
+                this.constructInputName(viewName),
+                function (view) {
+                    cur.curView = view;
+                    view.on(onParam);
+                }
+            );
+        }
+    }
+
+    let viewDisplay = new ViewDisplay(function () {
+        viewDisplay.on(getInputName());
+        $("#input-select").change(function () {
+            viewDisplay.off();
+            viewDisplay.on(getInputName());
+        });
+    });
+
+    $("#toggle-button").click(function () {
+        ViewDisplay.toggleHandler(viewDisplay);
+    });
+</script>
+</html>
