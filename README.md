@@ -20,19 +20,13 @@ $ # Another example
 $ python3 main.py input/hadoop/0.10.1/ hadoop-0.10.1 input
 ```
 
-## Start Server
-```shell
-$ cd server
-$ npm install
-$ npm start
-```
-
 ## Deploy
-###Deploy at localhost
+### Deploy at localhost
 ```shell
 $ git clone https://github.com/USC-Seekers/ImpressiveACDC
 $ cd ImpressiveACDC/server
 $ npm install
+$ mkdir public
 $ cd public
 $ git clone https://github.com/USC-Seekers/ImpressiveACDC
 $ node ../server.js
@@ -46,5 +40,13 @@ To access visualization page, type following URL in your browser
 http://localhost/ImpressiveACDC/index.html
 ```
 
-## Release
-[Visualization Page](http://54.183.64.51/ImpressiveACDC/visualization.html)
+## Quick Start
+
+### Select version
+You can choose the software version to be visualized using select filed at top left. Whenever a new version is selected, a force view will of that software will be displayed by default.
+### Force view
+Force view is the default view. You can search certain cluster name by search text filed and search button at top left.
+### Consistent view
+By clicking Toggle View button, you can enter consistent view from force view. Consistent view also support search function.
+### Class view
+By clicking any cluster name in either force view or consistent view, you can enter class view, which display a certain cluster in much more detail. Clicking Toggle View button will lead you back to force view or consistent view.
