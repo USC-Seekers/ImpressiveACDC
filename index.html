@@ -486,7 +486,6 @@
             this.d3Nodes = null;
             this.d3Links = null;
             this.d3Texts = null;
-            this.connectedToggle = 0;
 
             this.colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#f7ec8f'];
             let colors = this.colors;
@@ -557,7 +556,8 @@
             this.d3Nodes = null;
             this.d3Links = null;
             this.d3Texts = null;
-            this.connectedToggle = 0;
+            resetAutoComplete();
+            resetSearch();
 
         }
 
