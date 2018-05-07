@@ -46,6 +46,7 @@
 .sql { background: #9369BB;}
 .networking { background: #f7ec8f;}
 .null { background: #edced7;}
+/*svg{margin-left: 20%;}*/
 
 		</style>
 </head>
@@ -119,6 +120,21 @@ var tooltip = d3.select("body")
             .attr("height", height)
             .attr("class", "bubble");
 
+var ga = svg.append("g")
+    .attr("class", "everything");
+    
+var zoom_handler = d3.zoom()
+    .on("zoom", zoom_actions);
+
+zoom_handler(svg);  
+
+function zoom_actions(){
+    ga.attr("transform", d3.event.transform);
+}
+
+
+
+
         var nodes = d3.hierarchy(dataset)
 
             .sum(function(d) { 
@@ -126,7 +142,7 @@ var tooltip = d3.select("body")
                 else return d.complexity; });
             console.log(nodes);
 
-        var node = svg.selectAll(".node")
+        var node = ga.selectAll(".node")
             .data(bubble(nodes).descendants())
             .enter()
             .filter(function(d){
