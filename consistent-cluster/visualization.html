@@ -69,12 +69,12 @@
     let width = null;
     let height = null;
     let inputHeight = null;
-    let colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#FD9898', '#f7ec8f'];
+    let colors = ['#FD7F28', '#AFC8E7', '#9ADE8D', '#9369BB', '#f7ec8f'];
     let typeMap = {
         "graphics": {index: 1, color: colors[1], name: "Graphics"},
         "no_match": {index: 0, color: colors[0], name: "No Match"},
         "io": {index: 2, color: colors[2], name: "IO"},
-        "networking": {index: 4, color: colors[5], name: "Networking"},
+        "networking": {index: 4, color: colors[4], name: "Networking"},
         "sql": {index: 3, color: colors[3], name: "SQL"},
     };
 
@@ -125,9 +125,6 @@
         let rv = node.y * 30 + height / 2;
         if (rv < getNodeSize(node) + 10) rv = getNodeSize(node) + 10;
         if (rv > height - getNodeSize(node) - 10) rv = height - getNodeSize(node) - 10;
-        if (node.id === "org.apache.logging.log4j.perf.jmh.generated.ss") {
-            console.log(rv);
-        }
         return rv;
     };
 
