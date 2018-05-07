@@ -29,7 +29,8 @@ $ npm install
 $ mkdir public
 $ cd public
 $ git clone https://github.com/USC-Seekers/ImpressiveACDC
-$ node ../server.js
+$ cd .. 
+$ node server.js
 ```
 
 Note that you may need root privilege to start server at port 80. You can also modify server.js to start server at a different port.
