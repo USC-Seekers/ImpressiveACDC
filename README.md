@@ -51,3 +51,5 @@ Force view is the default view. You can search certain cluster name by search te
 By clicking Toggle View button, you can enter consistent view from force view. Consistent view also support search function.
 ### Class view
 By clicking any cluster name in either force view or consistent view, you can enter class view, which display a certain cluster in much more detail. Clicking Toggle View button will lead you back to force view or consistent view.
+## Release
+[Visualization Page](http://54.183.64.51/ImpressiveACDC/visualization.html)
